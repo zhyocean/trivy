@@ -11,7 +11,7 @@ import (
 	"golang.org/x/exp/slices"
 	"golang.org/x/xerrors"
 
-	"github.com/aquasecurity/trivy/pkg/syncx"
+	"github.com/zhanglimao/trivy/pkg/syncx"
 )
 
 type allFS interface {

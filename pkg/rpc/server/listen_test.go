@@ -17,11 +17,11 @@ import (
 
 	"github.com/aquasecurity/trivy-db/pkg/db"
 	"github.com/aquasecurity/trivy-db/pkg/metadata"
-	dbFile "github.com/aquasecurity/trivy/pkg/db"
-	"github.com/aquasecurity/trivy/pkg/fanal/cache"
-	ftypes "github.com/aquasecurity/trivy/pkg/fanal/types"
-	"github.com/aquasecurity/trivy/pkg/utils/fsutils"
-	rpcCache "github.com/aquasecurity/trivy/rpc/cache"
+	dbFile "github.com/zhanglimao/trivy/pkg/db"
+	"github.com/zhanglimao/trivy/pkg/fanal/cache"
+	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhanglimao/trivy/pkg/utils/fsutils"
+	rpcCache "github.com/zhanglimao/trivy/rpc/cache"
 )
 
 func Test_dbWorker_update(t *testing.T) {

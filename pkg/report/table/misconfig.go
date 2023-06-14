@@ -13,7 +13,7 @@ import (
 
 	"github.com/aquasecurity/tml"
 
-	"github.com/aquasecurity/trivy/pkg/types"
+	"github.com/zhanglimao/trivy/pkg/types"
 )
 
 const (

@@ -8,9 +8,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/aquasecurity/trivy/pkg/fanal/analyzer"
-	"github.com/aquasecurity/trivy/pkg/fanal/analyzer/secret"
-	"github.com/aquasecurity/trivy/pkg/fanal/types"
+	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
+	"github.com/zhanglimao/trivy/pkg/fanal/analyzer/secret"
+	"github.com/zhanglimao/trivy/pkg/fanal/types"
 )
 
 func TestSecretAnalyzer(t *testing.T) {

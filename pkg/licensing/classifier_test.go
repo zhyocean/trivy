@@ -4,12 +4,12 @@ import (
 	"os"
 	"testing"
 
-	"github.com/aquasecurity/trivy/pkg/licensing"
+	"github.com/zhanglimao/trivy/pkg/licensing"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/aquasecurity/trivy/pkg/fanal/types"
+	"github.com/zhanglimao/trivy/pkg/fanal/types"
 )
 
 func TestClassifier_FullClassify(t *testing.T) {

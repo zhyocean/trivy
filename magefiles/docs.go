@@ -5,9 +5,9 @@ package main
 import (
 	"github.com/spf13/cobra/doc"
 
-	"github.com/aquasecurity/trivy/pkg/commands"
-	"github.com/aquasecurity/trivy/pkg/flag"
-	"github.com/aquasecurity/trivy/pkg/log"
+	"github.com/zhanglimao/trivy/pkg/commands"
+	"github.com/zhanglimao/trivy/pkg/flag"
+	"github.com/zhanglimao/trivy/pkg/log"
 )
 
 // Generate CLI references

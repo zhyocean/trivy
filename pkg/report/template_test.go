@@ -9,9 +9,9 @@ import (
 	"github.com/stretchr/testify/assert"
 
 	dbTypes "github.com/aquasecurity/trivy-db/pkg/types"
-	"github.com/aquasecurity/trivy/pkg/clock"
-	"github.com/aquasecurity/trivy/pkg/report"
-	"github.com/aquasecurity/trivy/pkg/types"
+	"github.com/zhanglimao/trivy/pkg/clock"
+	"github.com/zhanglimao/trivy/pkg/report"
+	"github.com/zhanglimao/trivy/pkg/types"
 )
 
 func TestReportWriter_Template(t *testing.T) {

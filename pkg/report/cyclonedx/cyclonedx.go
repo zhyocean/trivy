@@ -6,8 +6,8 @@ import (
 	cdx "github.com/CycloneDX/cyclonedx-go"
 	"golang.org/x/xerrors"
 
-	"github.com/aquasecurity/trivy/pkg/sbom/cyclonedx"
-	"github.com/aquasecurity/trivy/pkg/types"
+	"github.com/zhanglimao/trivy/pkg/sbom/cyclonedx"
+	"github.com/zhanglimao/trivy/pkg/types"
 )
 
 // Writer implements types.Writer

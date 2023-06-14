@@ -19,8 +19,8 @@ import (
 	"github.com/stretchr/testify/require"
 	testcontainers "github.com/testcontainers/testcontainers-go"
 
-	"github.com/aquasecurity/trivy/pkg/clock"
-	"github.com/aquasecurity/trivy/pkg/report"
+	"github.com/zhanglimao/trivy/pkg/clock"
+	"github.com/zhanglimao/trivy/pkg/report"
 )
 
 type csArgs struct {

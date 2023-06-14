@@ -7,8 +7,8 @@ import (
 
 	"github.com/aquasecurity/trivy-kubernetes/pkg/k8s"
 	"github.com/aquasecurity/trivy-kubernetes/pkg/trivyk8s"
-	"github.com/aquasecurity/trivy/pkg/flag"
-	"github.com/aquasecurity/trivy/pkg/log"
+	"github.com/zhanglimao/trivy/pkg/flag"
+	"github.com/zhanglimao/trivy/pkg/log"
 )
 
 // namespaceRun runs scan on kubernetes cluster

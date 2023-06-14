@@ -9,11 +9,11 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/aquasecurity/defsec/pkg/detection"
-	"github.com/aquasecurity/trivy/internal/testutil"
-	"github.com/aquasecurity/trivy/pkg/fanal/analyzer"
-	"github.com/aquasecurity/trivy/pkg/fanal/analyzer/config"
-	"github.com/aquasecurity/trivy/pkg/fanal/types"
-	"github.com/aquasecurity/trivy/pkg/misconf"
+	"github.com/zhanglimao/trivy/internal/testutil"
+	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
+	"github.com/zhanglimao/trivy/pkg/fanal/analyzer/config"
+	"github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhanglimao/trivy/pkg/misconf"
 )
 
 func TestAnalyzer_PostAnalyze(t *testing.T) {

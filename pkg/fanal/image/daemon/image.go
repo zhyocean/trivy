@@ -16,7 +16,7 @@ import (
 	"github.com/samber/lo"
 	"golang.org/x/xerrors"
 
-	"github.com/aquasecurity/trivy/pkg/log"
+	"github.com/zhanglimao/trivy/pkg/log"
 )
 
 type Image interface {

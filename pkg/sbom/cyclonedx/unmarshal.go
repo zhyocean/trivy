@@ -7,17 +7,17 @@ import (
 	"sort"
 	"strconv"
 
-	"github.com/aquasecurity/trivy/pkg/sbom/cyclonedx/core"
+	"github.com/zhanglimao/trivy/pkg/sbom/cyclonedx/core"
 
 	cdx "github.com/CycloneDX/cyclonedx-go"
 	"github.com/samber/lo"
 	"golang.org/x/exp/maps"
 	"golang.org/x/xerrors"
 
-	ftypes "github.com/aquasecurity/trivy/pkg/fanal/types"
-	"github.com/aquasecurity/trivy/pkg/log"
-	"github.com/aquasecurity/trivy/pkg/purl"
-	"github.com/aquasecurity/trivy/pkg/types"
+	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhanglimao/trivy/pkg/log"
+	"github.com/zhanglimao/trivy/pkg/purl"
+	"github.com/zhanglimao/trivy/pkg/types"
 )
 
 var (

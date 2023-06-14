@@ -15,11 +15,11 @@ import (
 	"github.com/samber/lo"
 	"golang.org/x/exp/slices"
 
-	"github.com/aquasecurity/trivy/pkg/digest"
-	"github.com/aquasecurity/trivy/pkg/fanal/analyzer"
-	"github.com/aquasecurity/trivy/pkg/fanal/types"
-	"github.com/aquasecurity/trivy/pkg/licensing"
-	"github.com/aquasecurity/trivy/pkg/log"
+	"github.com/zhanglimao/trivy/pkg/digest"
+	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
+	"github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhanglimao/trivy/pkg/licensing"
+	"github.com/zhanglimao/trivy/pkg/log"
 )
 
 func init() {

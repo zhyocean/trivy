@@ -48,7 +48,7 @@
           },
           "version": "{{ .InstalledVersion }}"
         },
-        {{- /* TODO: No mapping available - https://github.com/aquasecurity/trivy/issues/332 */}}
+        {{- /* TODO: No mapping available - https://github.com/zhanglimao/trivy/issues/332 */}}
         "operating_system": "Unknown",
         "image": "{{ $image }}"
       },

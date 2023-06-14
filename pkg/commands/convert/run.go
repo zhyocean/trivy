@@ -7,12 +7,12 @@ import (
 
 	"golang.org/x/xerrors"
 
-	"github.com/aquasecurity/trivy/pkg/commands/operation"
-	"github.com/aquasecurity/trivy/pkg/flag"
-	"github.com/aquasecurity/trivy/pkg/log"
-	"github.com/aquasecurity/trivy/pkg/report"
-	"github.com/aquasecurity/trivy/pkg/result"
-	"github.com/aquasecurity/trivy/pkg/types"
+	"github.com/zhanglimao/trivy/pkg/commands/operation"
+	"github.com/zhanglimao/trivy/pkg/flag"
+	"github.com/zhanglimao/trivy/pkg/log"
+	"github.com/zhanglimao/trivy/pkg/report"
+	"github.com/zhanglimao/trivy/pkg/result"
+	"github.com/zhanglimao/trivy/pkg/types"
 )
 
 func Run(ctx context.Context, opts flag.Options) (err error) {

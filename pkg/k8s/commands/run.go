@@ -9,14 +9,14 @@ import (
 
 	"github.com/aquasecurity/trivy-kubernetes/pkg/artifacts"
 	"github.com/aquasecurity/trivy-kubernetes/pkg/k8s"
-	cmd "github.com/aquasecurity/trivy/pkg/commands/artifact"
-	"github.com/aquasecurity/trivy/pkg/commands/operation"
-	cr "github.com/aquasecurity/trivy/pkg/compliance/report"
-	"github.com/aquasecurity/trivy/pkg/flag"
-	"github.com/aquasecurity/trivy/pkg/k8s/report"
-	"github.com/aquasecurity/trivy/pkg/k8s/scanner"
-	"github.com/aquasecurity/trivy/pkg/log"
-	"github.com/aquasecurity/trivy/pkg/types"
+	cmd "github.com/zhanglimao/trivy/pkg/commands/artifact"
+	"github.com/zhanglimao/trivy/pkg/commands/operation"
+	cr "github.com/zhanglimao/trivy/pkg/compliance/report"
+	"github.com/zhanglimao/trivy/pkg/flag"
+	"github.com/zhanglimao/trivy/pkg/k8s/report"
+	"github.com/zhanglimao/trivy/pkg/k8s/scanner"
+	"github.com/zhanglimao/trivy/pkg/log"
+	"github.com/zhanglimao/trivy/pkg/types"
 )
 
 const (

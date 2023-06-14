@@ -7,9 +7,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/aquasecurity/trivy/pkg/fanal/analyzer"
-	aos "github.com/aquasecurity/trivy/pkg/fanal/analyzer/os"
-	"github.com/aquasecurity/trivy/pkg/fanal/types"
+	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
+	aos "github.com/zhanglimao/trivy/pkg/fanal/analyzer/os"
+	"github.com/zhanglimao/trivy/pkg/fanal/types"
 )
 
 func Test_apkRepoAnalyzer_Analyze(t *testing.T) {

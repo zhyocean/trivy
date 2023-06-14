@@ -11,8 +11,8 @@ import (
 	jwriter "github.com/mailru/easyjson/jwriter"
 
 	types2 "github.com/aquasecurity/trivy-db/pkg/types"
-	types1 "github.com/aquasecurity/trivy/pkg/fanal/types"
-	types "github.com/aquasecurity/trivy/pkg/types"
+	types1 "github.com/zhanglimao/trivy/pkg/fanal/types"
+	types "github.com/zhanglimao/trivy/pkg/types"
 )
 
 // suppress unused package warning

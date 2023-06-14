@@ -5,7 +5,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/aquasecurity/trivy/pkg/fanal/types"
+	"github.com/zhanglimao/trivy/pkg/fanal/types"
 
 	"github.com/aws/aws-sdk-go/aws/request"
 

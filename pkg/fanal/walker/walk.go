@@ -8,9 +8,9 @@ import (
 
 	"github.com/bmatcuk/doublestar"
 
-	"github.com/aquasecurity/trivy/pkg/fanal/analyzer"
-	"github.com/aquasecurity/trivy/pkg/fanal/utils"
-	"github.com/aquasecurity/trivy/pkg/log"
+	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
+	"github.com/zhanglimao/trivy/pkg/fanal/utils"
+	"github.com/zhanglimao/trivy/pkg/log"
 )
 
 var (

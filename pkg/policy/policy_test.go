@@ -19,9 +19,9 @@ import (
 	"k8s.io/utils/clock"
 	fake "k8s.io/utils/clock/testing"
 
-	ftypes "github.com/aquasecurity/trivy/pkg/fanal/types"
-	"github.com/aquasecurity/trivy/pkg/oci"
-	"github.com/aquasecurity/trivy/pkg/policy"
+	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhanglimao/trivy/pkg/oci"
+	"github.com/zhanglimao/trivy/pkg/policy"
 )
 
 type fakeLayer struct {

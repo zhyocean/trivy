@@ -381,8 +381,8 @@ Total: 9 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 4, CRITICAL: 5)
 
 </details>
 
-[helper]: https://github.com/aquasecurity/trivy/tree/{{ git.tag }}/pkg/result/module.go
-[policy]: https://github.com/aquasecurity/trivy/tree/{{ git.tag }}/contrib/example_policy
+[helper]: https://github.com/zhanglimao/trivy/tree/{{ git.tag }}/pkg/result/module.go
+[policy]: https://github.com/zhanglimao/trivy/tree/{{ git.tag }}/contrib/example_policy
 
 ## By Inline Comments
 

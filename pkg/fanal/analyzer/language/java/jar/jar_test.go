@@ -6,10 +6,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/aquasecurity/trivy/pkg/fanal/analyzer"
-	"github.com/aquasecurity/trivy/pkg/fanal/types"
-	"github.com/aquasecurity/trivy/pkg/javadb"
-	"github.com/aquasecurity/trivy/pkg/mapfs"
+	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
+	"github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhanglimao/trivy/pkg/javadb"
+	"github.com/zhanglimao/trivy/pkg/mapfs"
 	"github.com/stretchr/testify/assert"
 
 	_ "modernc.org/sqlite"

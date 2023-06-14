@@ -5,10 +5,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/aquasecurity/trivy/pkg/compliance/spec"
-	"github.com/aquasecurity/trivy/pkg/fanal/secret"
-	ftypes "github.com/aquasecurity/trivy/pkg/fanal/types"
-	"github.com/aquasecurity/trivy/pkg/types"
+	"github.com/zhanglimao/trivy/pkg/compliance/spec"
+	"github.com/zhanglimao/trivy/pkg/fanal/secret"
+	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhanglimao/trivy/pkg/types"
 )
 
 func TestMapSpecCheckIDToFilteredResults(t *testing.T) {

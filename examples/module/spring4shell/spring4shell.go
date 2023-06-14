@@ -12,10 +12,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/aquasecurity/trivy/pkg/module/api"
-	"github.com/aquasecurity/trivy/pkg/module/serialize"
-	"github.com/aquasecurity/trivy/pkg/module/wasm"
-	"github.com/aquasecurity/trivy/pkg/types"
+	"github.com/zhanglimao/trivy/pkg/module/api"
+	"github.com/zhanglimao/trivy/pkg/module/serialize"
+	"github.com/zhanglimao/trivy/pkg/module/wasm"
+	"github.com/zhanglimao/trivy/pkg/types"
 )
 
 const (

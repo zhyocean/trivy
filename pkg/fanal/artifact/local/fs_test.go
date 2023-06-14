@@ -11,18 +11,18 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/exp/slices"
 
-	"github.com/aquasecurity/trivy/pkg/fanal/analyzer"
-	"github.com/aquasecurity/trivy/pkg/fanal/artifact"
-	"github.com/aquasecurity/trivy/pkg/fanal/cache"
-	"github.com/aquasecurity/trivy/pkg/fanal/types"
-	"github.com/aquasecurity/trivy/pkg/misconf"
+	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
+	"github.com/zhanglimao/trivy/pkg/fanal/artifact"
+	"github.com/zhanglimao/trivy/pkg/fanal/cache"
+	"github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhanglimao/trivy/pkg/misconf"
 
-	_ "github.com/aquasecurity/trivy/pkg/fanal/analyzer/config/all"
-	_ "github.com/aquasecurity/trivy/pkg/fanal/analyzer/language/python/pip"
-	_ "github.com/aquasecurity/trivy/pkg/fanal/analyzer/os/alpine"
-	_ "github.com/aquasecurity/trivy/pkg/fanal/analyzer/pkg/apk"
-	_ "github.com/aquasecurity/trivy/pkg/fanal/analyzer/secret"
-	_ "github.com/aquasecurity/trivy/pkg/fanal/handler/sysfile"
+	_ "github.com/zhanglimao/trivy/pkg/fanal/analyzer/config/all"
+	_ "github.com/zhanglimao/trivy/pkg/fanal/analyzer/language/python/pip"
+	_ "github.com/zhanglimao/trivy/pkg/fanal/analyzer/os/alpine"
+	_ "github.com/zhanglimao/trivy/pkg/fanal/analyzer/pkg/apk"
+	_ "github.com/zhanglimao/trivy/pkg/fanal/analyzer/secret"
+	_ "github.com/zhanglimao/trivy/pkg/fanal/handler/sysfile"
 )
 
 func TestArtifact_Inspect(t *testing.T) {

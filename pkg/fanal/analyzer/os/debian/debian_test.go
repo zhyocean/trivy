@@ -5,13 +5,13 @@ import (
 	"os"
 	"testing"
 
-	aos "github.com/aquasecurity/trivy/pkg/fanal/analyzer/os"
-	"github.com/aquasecurity/trivy/pkg/fanal/types"
+	aos "github.com/zhanglimao/trivy/pkg/fanal/analyzer/os"
+	"github.com/zhanglimao/trivy/pkg/fanal/types"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/aquasecurity/trivy/pkg/fanal/analyzer"
+	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
 )
 
 func Test_debianOSAnalyzer_Analyze(t *testing.T) {

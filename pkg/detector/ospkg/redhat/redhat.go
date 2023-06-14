@@ -16,11 +16,11 @@ import (
 	ustrings "github.com/aquasecurity/trivy-db/pkg/utils/strings"
 	redhat "github.com/aquasecurity/trivy-db/pkg/vulnsrc/redhat-oval"
 	"github.com/aquasecurity/trivy-db/pkg/vulnsrc/vulnerability"
-	"github.com/aquasecurity/trivy/pkg/fanal/analyzer/os"
-	ftypes "github.com/aquasecurity/trivy/pkg/fanal/types"
-	"github.com/aquasecurity/trivy/pkg/log"
-	"github.com/aquasecurity/trivy/pkg/scanner/utils"
-	"github.com/aquasecurity/trivy/pkg/types"
+	"github.com/zhanglimao/trivy/pkg/fanal/analyzer/os"
+	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhanglimao/trivy/pkg/log"
+	"github.com/zhanglimao/trivy/pkg/scanner/utils"
+	"github.com/zhanglimao/trivy/pkg/types"
 )
 
 var (

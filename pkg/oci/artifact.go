@@ -12,9 +12,9 @@ import (
 	v1 "github.com/google/go-containerregistry/pkg/v1"
 	"golang.org/x/xerrors"
 
-	"github.com/aquasecurity/trivy/pkg/downloader"
-	"github.com/aquasecurity/trivy/pkg/fanal/types"
-	"github.com/aquasecurity/trivy/pkg/remote"
+	"github.com/zhanglimao/trivy/pkg/downloader"
+	"github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhanglimao/trivy/pkg/remote"
 )
 
 const (

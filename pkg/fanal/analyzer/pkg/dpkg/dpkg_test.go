@@ -2,14 +2,14 @@ package dpkg
 
 import (
 	"context"
-	"github.com/aquasecurity/trivy/pkg/mapfs"
+	"github.com/zhanglimao/trivy/pkg/mapfs"
 	"os"
 	"path/filepath"
 	"sort"
 	"testing"
 
-	"github.com/aquasecurity/trivy/pkg/fanal/analyzer"
-	"github.com/aquasecurity/trivy/pkg/fanal/types"
+	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
+	"github.com/zhanglimao/trivy/pkg/fanal/types"
 	"github.com/stretchr/testify/assert"
 )
 

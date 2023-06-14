@@ -17,9 +17,9 @@ import (
 
 	tdb "github.com/aquasecurity/trivy-db/pkg/db"
 	"github.com/aquasecurity/trivy-db/pkg/metadata"
-	"github.com/aquasecurity/trivy/pkg/db"
-	ftypes "github.com/aquasecurity/trivy/pkg/fanal/types"
-	"github.com/aquasecurity/trivy/pkg/oci"
+	"github.com/zhanglimao/trivy/pkg/db"
+	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhanglimao/trivy/pkg/oci"
 )
 
 const mediaType = "application/vnd.aquasec.trivy.db.layer.v1.tar+gzip"

@@ -5,11 +5,11 @@ import (
 
 	"github.com/google/go-containerregistry/pkg/authn"
 
-	"github.com/aquasecurity/trivy/pkg/fanal/image/registry/azure"
-	"github.com/aquasecurity/trivy/pkg/fanal/image/registry/ecr"
-	"github.com/aquasecurity/trivy/pkg/fanal/image/registry/google"
-	"github.com/aquasecurity/trivy/pkg/fanal/log"
-	"github.com/aquasecurity/trivy/pkg/fanal/types"
+	"github.com/zhanglimao/trivy/pkg/fanal/image/registry/azure"
+	"github.com/zhanglimao/trivy/pkg/fanal/image/registry/ecr"
+	"github.com/zhanglimao/trivy/pkg/fanal/image/registry/google"
+	"github.com/zhanglimao/trivy/pkg/fanal/log"
+	"github.com/zhanglimao/trivy/pkg/fanal/types"
 )
 
 var (

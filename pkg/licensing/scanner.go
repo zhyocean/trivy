@@ -4,7 +4,7 @@ import (
 	"golang.org/x/exp/slices"
 
 	dbTypes "github.com/aquasecurity/trivy-db/pkg/types"
-	"github.com/aquasecurity/trivy/pkg/fanal/types"
+	"github.com/zhanglimao/trivy/pkg/fanal/types"
 )
 
 type ScannerOption struct {

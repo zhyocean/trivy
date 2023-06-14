@@ -7,7 +7,7 @@ import (
 	"github.com/masahiro331/go-vmdk-parser/pkg/virtualization/vmdk"
 	"golang.org/x/xerrors"
 
-	"github.com/aquasecurity/trivy/pkg/fanal/vm"
+	"github.com/zhanglimao/trivy/pkg/fanal/vm"
 )
 
 type VMDK struct{}

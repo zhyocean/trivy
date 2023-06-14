@@ -10,10 +10,10 @@ import (
 	"github.com/go-git/go-git/v5/plumbing/transport/http"
 	"golang.org/x/xerrors"
 
-	"github.com/aquasecurity/trivy/pkg/fanal/artifact"
-	"github.com/aquasecurity/trivy/pkg/fanal/artifact/local"
-	"github.com/aquasecurity/trivy/pkg/fanal/cache"
-	"github.com/aquasecurity/trivy/pkg/fanal/types"
+	"github.com/zhanglimao/trivy/pkg/fanal/artifact"
+	"github.com/zhanglimao/trivy/pkg/fanal/artifact/local"
+	"github.com/zhanglimao/trivy/pkg/fanal/cache"
+	"github.com/zhanglimao/trivy/pkg/fanal/types"
 )
 
 type Artifact struct {

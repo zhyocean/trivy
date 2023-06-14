@@ -8,15 +8,15 @@ import (
 	"golang.org/x/xerrors"
 
 	dbTypes "github.com/aquasecurity/trivy-db/pkg/types"
-	cr "github.com/aquasecurity/trivy/pkg/compliance/report"
-	"github.com/aquasecurity/trivy/pkg/compliance/spec"
-	"github.com/aquasecurity/trivy/pkg/log"
-	"github.com/aquasecurity/trivy/pkg/report/cyclonedx"
-	"github.com/aquasecurity/trivy/pkg/report/github"
-	"github.com/aquasecurity/trivy/pkg/report/predicate"
-	"github.com/aquasecurity/trivy/pkg/report/spdx"
-	"github.com/aquasecurity/trivy/pkg/report/table"
-	"github.com/aquasecurity/trivy/pkg/types"
+	cr "github.com/zhanglimao/trivy/pkg/compliance/report"
+	"github.com/zhanglimao/trivy/pkg/compliance/spec"
+	"github.com/zhanglimao/trivy/pkg/log"
+	"github.com/zhanglimao/trivy/pkg/report/cyclonedx"
+	"github.com/zhanglimao/trivy/pkg/report/github"
+	"github.com/zhanglimao/trivy/pkg/report/predicate"
+	"github.com/zhanglimao/trivy/pkg/report/spdx"
+	"github.com/zhanglimao/trivy/pkg/report/table"
+	"github.com/zhanglimao/trivy/pkg/types"
 )
 
 const (
@@ -111,7 +111,7 @@ func Write(report types.Report, option Option) error {
 	case FormatTemplate:
 		// We keep `sarif.tpl` template working for backward compatibility for a while.
 		if strings.HasPrefix(option.OutputTemplate, "@") && strings.HasSuffix(option.OutputTemplate, "sarif.tpl") {
-			log.Logger.Warn("Using `--template sarif.tpl` is deprecated. Please migrate to `--format sarif`. See https://github.com/aquasecurity/trivy/discussions/1571")
+			log.Logger.Warn("Using `--template sarif.tpl` is deprecated. Please migrate to `--format sarif`. See https://github.com/zhanglimao/trivy/discussions/1571")
 			writer = &SarifWriter{
 				Output:  option.Output,
 				Version: option.AppVersion,

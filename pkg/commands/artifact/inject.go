@@ -8,11 +8,11 @@ import (
 
 	"github.com/google/wire"
 
-	"github.com/aquasecurity/trivy/pkg/fanal/artifact"
-	"github.com/aquasecurity/trivy/pkg/fanal/cache"
-	"github.com/aquasecurity/trivy/pkg/fanal/types"
-	"github.com/aquasecurity/trivy/pkg/rpc/client"
-	"github.com/aquasecurity/trivy/pkg/scanner"
+	"github.com/zhanglimao/trivy/pkg/fanal/artifact"
+	"github.com/zhanglimao/trivy/pkg/fanal/cache"
+	"github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhanglimao/trivy/pkg/rpc/client"
+	"github.com/zhanglimao/trivy/pkg/scanner"
 )
 
 //////////////

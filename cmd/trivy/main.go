@@ -6,9 +6,9 @@ import (
 
 	"golang.org/x/xerrors"
 
-	"github.com/aquasecurity/trivy/pkg/commands"
-	"github.com/aquasecurity/trivy/pkg/log"
-	"github.com/aquasecurity/trivy/pkg/plugin"
+	"github.com/zhanglimao/trivy/pkg/commands"
+	"github.com/zhanglimao/trivy/pkg/log"
+	"github.com/zhanglimao/trivy/pkg/plugin"
 
 	_ "modernc.org/sqlite" // sqlite driver for RPM DB and Java DB
 )

@@ -1,9 +1,9 @@
 package k8s
 
 import (
-	"github.com/aquasecurity/trivy/pkg/fanal/analyzer"
-	"github.com/aquasecurity/trivy/pkg/fanal/analyzer/config"
-	"github.com/aquasecurity/trivy/pkg/misconf"
+	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
+	"github.com/zhanglimao/trivy/pkg/fanal/analyzer/config"
+	"github.com/zhanglimao/trivy/pkg/misconf"
 )
 
 const (

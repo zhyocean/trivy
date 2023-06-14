@@ -41,7 +41,7 @@ Trivy is available in most common distribution channels. The full list of instal
 
 - `brew install trivy`
 - `docker run aquasec/trivy`
-- Download binary from <https://github.com/aquasecurity/trivy/releases/latest/>
+- Download binary from <https://github.com/zhanglimao/trivy/releases/latest/>
 - See [Installation] for more
 
 Trivy is integrated with many popular platforms and applications. The complete list of integrations is available in the [Ecosystem] page. Here are a few popular examples:
@@ -52,7 +52,7 @@ Trivy is integrated with many popular platforms and applications. The complete l
 - See [Ecosystem] for more
 
 ### Canary builds
-There are canary builds ([Docker Hub](https://hub.docker.com/r/aquasec/trivy/tags?page=1&name=canary), [GitHub](https://github.com/aquasecurity/trivy/pkgs/container/trivy/75776514?tag=canary), [ECR](https://gallery.ecr.aws/aquasecurity/trivy#canary) images and [binaries](https://github.com/aquasecurity/trivy/actions/workflows/canary.yaml)) as generated every push to main branch.
+There are canary builds ([Docker Hub](https://hub.docker.com/r/aquasec/trivy/tags?page=1&name=canary), [GitHub](https://github.com/zhanglimao/trivy/pkgs/container/trivy/75776514?tag=canary), [ECR](https://gallery.ecr.aws/aquasecurity/trivy#canary) images and [binaries](https://github.com/zhanglimao/trivy/actions/workflows/canary.yaml)) as generated every push to main branch.
 
 Please be aware: canary builds might have critical bugs, it's not recommended for use in production.
 
@@ -112,15 +112,15 @@ Join our [Slack community][slack] to stay up to date with community efforts.
 
 Please ensure to abide by our [Code of Conduct][code-of-conduct] during all interactions.
 
-[test]: https://github.com/aquasecurity/trivy/actions/workflows/test.yaml
-[test-img]: https://github.com/aquasecurity/trivy/actions/workflows/test.yaml/badge.svg
+[test]: https://github.com/zhanglimao/trivy/actions/workflows/test.yaml
+[test-img]: https://github.com/zhanglimao/trivy/actions/workflows/test.yaml/badge.svg
 [go-report]: https://goreportcard.com/report/github.com/aquasecurity/trivy
 [go-report-img]: https://goreportcard.com/badge/github.com/aquasecurity/trivy
-[release]: https://github.com/aquasecurity/trivy/releases
+[release]: https://github.com/zhanglimao/trivy/releases
 [release-img]: https://img.shields.io/github/release/aquasecurity/trivy.svg?logo=github
 [github-downloads-img]: https://img.shields.io/github/downloads/aquasecurity/trivy/total?logo=github
 [docker-pulls]: https://img.shields.io/docker/pulls/aquasec/trivy?logo=docker&label=docker%20pulls%20%2F%20trivy
-[license]: https://github.com/aquasecurity/trivy/blob/main/LICENSE
+[license]: https://github.com/zhanglimao/trivy/blob/main/LICENSE
 [license-img]: https://img.shields.io/badge/License-Apache%202.0-blue.svg
 [homepage]: https://trivy.dev
 [docs]: https://aquasecurity.github.io/trivy
@@ -137,4 +137,4 @@ Please ensure to abide by our [Code of Conduct][code-of-conduct] during all inte
 
 [aquasec]: https://aquasec.com
 [oss]: https://www.aquasec.com/products/open-source-projects/
-[discussions]: https://github.com/aquasecurity/trivy/discussions
+[discussions]: https://github.com/zhanglimao/trivy/discussions

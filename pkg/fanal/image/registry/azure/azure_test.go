@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/aquasecurity/trivy/pkg/fanal/image/registry/azure"
-	"github.com/aquasecurity/trivy/pkg/fanal/types"
+	"github.com/zhanglimao/trivy/pkg/fanal/image/registry/azure"
+	"github.com/zhanglimao/trivy/pkg/fanal/types"
 )
 
 func TestRegistry_CheckOptions(t *testing.T) {

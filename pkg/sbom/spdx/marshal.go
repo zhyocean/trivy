@@ -16,14 +16,14 @@ import (
 	"golang.org/x/xerrors"
 	"k8s.io/utils/clock"
 
-	"github.com/aquasecurity/trivy/pkg/digest"
-	ftypes "github.com/aquasecurity/trivy/pkg/fanal/types"
-	"github.com/aquasecurity/trivy/pkg/licensing"
-	"github.com/aquasecurity/trivy/pkg/licensing/expression"
-	"github.com/aquasecurity/trivy/pkg/log"
-	"github.com/aquasecurity/trivy/pkg/purl"
-	"github.com/aquasecurity/trivy/pkg/scanner/utils"
-	"github.com/aquasecurity/trivy/pkg/types"
+	"github.com/zhanglimao/trivy/pkg/digest"
+	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhanglimao/trivy/pkg/licensing"
+	"github.com/zhanglimao/trivy/pkg/licensing/expression"
+	"github.com/zhanglimao/trivy/pkg/log"
+	"github.com/zhanglimao/trivy/pkg/purl"
+	"github.com/zhanglimao/trivy/pkg/scanner/utils"
+	"github.com/zhanglimao/trivy/pkg/types"
 )
 
 const (

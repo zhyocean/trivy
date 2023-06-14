@@ -8,7 +8,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/aquasecurity/trivy/pkg/flag"
+	"github.com/zhanglimao/trivy/pkg/flag"
 
 	"github.com/stretchr/testify/assert"
 

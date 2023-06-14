@@ -9,7 +9,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/aquasecurity/trivy/pkg/parallel"
+	"github.com/zhanglimao/trivy/pkg/parallel"
 )
 
 func TestPipeline_Do(t *testing.T) {

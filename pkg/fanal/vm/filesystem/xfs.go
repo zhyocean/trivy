@@ -7,7 +7,7 @@ import (
 	"github.com/masahiro331/go-xfs-filesystem/xfs"
 	"golang.org/x/xerrors"
 
-	"github.com/aquasecurity/trivy/pkg/fanal/vm"
+	"github.com/zhanglimao/trivy/pkg/fanal/vm"
 )
 
 type XFS struct{}

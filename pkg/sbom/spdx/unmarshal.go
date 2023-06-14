@@ -16,9 +16,9 @@ import (
 	"github.com/spdx/tools-golang/tagvalue"
 	"golang.org/x/xerrors"
 
-	ftypes "github.com/aquasecurity/trivy/pkg/fanal/types"
-	"github.com/aquasecurity/trivy/pkg/purl"
-	"github.com/aquasecurity/trivy/pkg/types"
+	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhanglimao/trivy/pkg/purl"
+	"github.com/zhanglimao/trivy/pkg/types"
 )
 
 var (

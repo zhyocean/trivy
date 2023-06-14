@@ -26,7 +26,7 @@ In this section you will find an aggregation of the different ways to install Tr
 === "RPM"
 
     ``` bash
-    rpm -ivh https://github.com/aquasecurity/trivy/releases/download/{{ git.tag }}/trivy_{{ git.tag[1:] }}_Linux-64bit.rpm
+    rpm -ivh https://github.com/zhanglimao/trivy/releases/download/{{ git.tag }}/trivy_{{ git.tag[1:] }}_Linux-64bit.rpm
     ```
 
 ### Debian/Ubuntu (Official)
@@ -45,7 +45,7 @@ In this section you will find an aggregation of the different ways to install Tr
 === "DEB"
 
     ``` bash
-    wget https://github.com/aquasecurity/trivy/releases/download/{{ git.tag }}/trivy_{{ git.tag[1:] }}_Linux-64bit.deb
+    wget https://github.com/zhanglimao/trivy/releases/download/{{ git.tag }}/trivy_{{ git.tag[1:] }}_Linux-64bit.deb
     sudo dpkg -i trivy_{{ git.tag[1:] }}_Linux-64bit.deb
     ```
 
@@ -116,7 +116,7 @@ References:
 
 ### Download Binary
 
-1. Download the file for your operating system/architecture from [GitHub Release assets](https://github.com/aquasecurity/trivy/releases/tag/{{ git.tag }}) (`curl -LO https://url.to/trivy.tar.gz`).  
+1. Download the file for your operating system/architecture from [GitHub Release assets](https://github.com/zhanglimao/trivy/releases/tag/{{ git.tag }}) (`curl -LO https://url.to/trivy.tar.gz`).  
 2. Unpack the downloaded archive (`tar -xzf ./trivy.tar.gz`).
 3. Put the binary somewhere in your `$PATH` (e.g `mv ./trivy /usr/local/bin/`).
 4. Make sure the binary has execution bit turned on (`chmod +x ./trivy`).

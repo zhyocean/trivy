@@ -10,10 +10,10 @@ import (
 	"github.com/aquasecurity/defsec/pkg/scanners/cloud/aws"
 	"github.com/aquasecurity/defsec/pkg/scanners/options"
 	"github.com/aquasecurity/defsec/pkg/state"
-	"github.com/aquasecurity/trivy/pkg/cloud/aws/cache"
-	"github.com/aquasecurity/trivy/pkg/commands/operation"
-	"github.com/aquasecurity/trivy/pkg/flag"
-	"github.com/aquasecurity/trivy/pkg/log"
+	"github.com/zhanglimao/trivy/pkg/cloud/aws/cache"
+	"github.com/zhanglimao/trivy/pkg/commands/operation"
+	"github.com/zhanglimao/trivy/pkg/flag"
+	"github.com/zhanglimao/trivy/pkg/log"
 )
 
 type AWSScanner struct {

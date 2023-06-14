@@ -377,4 +377,4 @@ cloud:
     account: 123456789012
 ```
 
-[example]: https://github.com/aquasecurity/trivy/tree/{{ git.tag }}/examples/trivy-conf/trivy.yaml
+[example]: https://github.com/zhanglimao/trivy/tree/{{ git.tag }}/examples/trivy-conf/trivy.yaml

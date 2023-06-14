@@ -12,10 +12,10 @@ import (
 	"go.uber.org/zap/zaptest/observer"
 
 	dbTypes "github.com/aquasecurity/trivy-db/pkg/types"
-	"github.com/aquasecurity/trivy/pkg/compliance/spec"
-	"github.com/aquasecurity/trivy/pkg/flag"
-	"github.com/aquasecurity/trivy/pkg/log"
-	"github.com/aquasecurity/trivy/pkg/report"
+	"github.com/zhanglimao/trivy/pkg/compliance/spec"
+	"github.com/zhanglimao/trivy/pkg/flag"
+	"github.com/zhanglimao/trivy/pkg/log"
+	"github.com/zhanglimao/trivy/pkg/report"
 )
 
 func TestReportFlagGroup_ToOptions(t *testing.T) {

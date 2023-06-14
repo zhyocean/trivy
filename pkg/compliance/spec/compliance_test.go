@@ -9,8 +9,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/aquasecurity/trivy/pkg/compliance/spec"
-	"github.com/aquasecurity/trivy/pkg/types"
+	"github.com/zhanglimao/trivy/pkg/compliance/spec"
+	"github.com/zhanglimao/trivy/pkg/types"
 )
 
 func TestComplianceSpec_Scanners(t *testing.T) {

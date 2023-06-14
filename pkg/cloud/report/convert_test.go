@@ -4,12 +4,12 @@ import (
 	"sort"
 	"testing"
 
-	fanaltypes "github.com/aquasecurity/trivy/pkg/fanal/types"
+	fanaltypes "github.com/zhanglimao/trivy/pkg/fanal/types"
 
 	"github.com/aws/aws-sdk-go-v2/aws/arn"
 
 	defsecTypes "github.com/aquasecurity/defsec/pkg/types"
-	"github.com/aquasecurity/trivy/pkg/types"
+	"github.com/zhanglimao/trivy/pkg/types"
 
 	"github.com/stretchr/testify/assert"
 

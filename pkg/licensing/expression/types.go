@@ -5,7 +5,7 @@ import (
 
 	"golang.org/x/exp/slices"
 
-	"github.com/aquasecurity/trivy/pkg/licensing"
+	"github.com/zhanglimao/trivy/pkg/licensing"
 )
 
 var versioned = []string{
