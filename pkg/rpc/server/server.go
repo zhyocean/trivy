@@ -2,7 +2,6 @@ package server
 
 import (
 	"context"
-	"fmt"
 
 	google_protobuf "github.com/golang/protobuf/ptypes/empty"
 	"github.com/google/wire"
@@ -56,8 +55,6 @@ func (s *ScanServer) Scan(ctx context.Context, in *rpcScanner.ScanRequest) (*rpc
 	if err != nil {
 		return nil, teeError(xerrors.Errorf("failed scan, %s: %w", in.Target, err))
 	}
-
-	fmt.Println(results)
 
 	return rpc.ConvertToRPCScanResponse(results, os), nil
 }

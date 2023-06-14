@@ -447,9 +447,6 @@ func Run(ctx context.Context, opts flag.Options, targetKind TargetKind) (err err
 		}
 	}
 
-	fmt.Println("report.Results")
-	fmt.Println(report.Results)
-
 	report, err = r.Filter(ctx, opts, report)
 	if err != nil {
 		return xerrors.Errorf("filter error: %w", err)
