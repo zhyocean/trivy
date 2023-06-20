@@ -497,7 +497,8 @@ func (ag AnalyzerGroup) PostAnalyze(ctx context.Context, files *syncx.Map[Type, 
 			Options: opts,
 		})
 		if err != nil {
-			return xerrors.Errorf("post analysis error: %w", err)
+			xerrors.Errorf("post analysis error: %w", err)
+			continue
 		}
 		result.Merge(res)
 	}
