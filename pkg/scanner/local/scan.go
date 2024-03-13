@@ -337,6 +337,7 @@ func (s Scanner) scanLicenses(detail ftypes.ArtifactDetail,
 				Name:       finding.Name,
 				Confidence: finding.Confidence,
 				Link:       finding.Link,
+				Layer:      license.Layer,
 			})
 
 		}
