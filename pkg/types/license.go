@@ -28,4 +28,5 @@ type DetectedLicense struct {
 
 	// Link is a SPDX link of the license
 	Link string
+	Layer types.Layer `json:",omitempty"`
 }
