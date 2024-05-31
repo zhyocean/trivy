@@ -4,7 +4,6 @@ import (
 	"context"
 	"errors"
 	"fmt"
-
 	"github.com/hashicorp/go-multierror"
 	"github.com/spf13/viper"
 	"golang.org/x/exp/slices"
@@ -81,6 +80,8 @@ type Runner interface {
 	ScanFilesystem(ctx context.Context, opts flag.Options) (types.Report, error)
 	// ScanRootfs scans rootfs
 	ScanRootfs(ctx context.Context, opts flag.Options) (types.Report, error)
+	// ScanPacket scans packets
+	ScanPacket(ctx context.Context, opts flag.Options) (types.Report, error)
 	// ScanRepository scans repository
 	ScanRepository(ctx context.Context, opts flag.Options) (types.Report, error)
 	// ScanSBOM scans SBOM
@@ -209,6 +210,25 @@ func (r *runner) scanFS(ctx context.Context, opts flag.Options) (types.Report, e
 	} else {
 		// Scan filesystem in client/server mode
 		s = filesystemRemoteScanner
+	}
+
+	return r.scanArtifact(ctx, opts, s)
+}
+
+func (r *runner) ScanPacket(ctx context.Context, opts flag.Options) (types.Report, error) {
+
+	return r.scanPacket(ctx, opts)
+}
+
+func (r *runner) scanPacket(ctx context.Context, opts flag.Options) (types.Report, error) {
+	var s InitializeScanner
+	if opts.ServerAddr == "" {
+		// Scan filesystem in standalone mode
+		//s = filesystemStandaloneScanner
+		return types.Report{}, errors.New("not support serverAddr is nil")
+	} else {
+		// Scan packet in client/server mode
+		s = packetRemoteScanner
 	}
 
 	return r.scanArtifact(ctx, opts, s)
@@ -540,6 +560,8 @@ func initScannerConfig(opts flag.Options, cacheClient cache.Cache) (ScannerConfi
 	}
 
 	scanOptions := types.ScanOptions{
+		OsFamily:            opts.OsFamily,
+		OsName:              opts.OsName,
 		VulnType:            opts.VulnType,
 		Scanners:            opts.Scanners,
 		ImageConfigScanners: opts.ImageConfigScanners, // this is valid only for 'image' subcommand
@@ -547,6 +569,7 @@ func initScannerConfig(opts flag.Options, cacheClient cache.Cache) (ScannerConfi
 		ListAllPackages:     opts.ListAllPkgs,
 		LicenseCategories:   opts.LicenseCategories,
 		FilePatterns:        opts.FilePatterns,
+		Packages:            opts.Packages,
 	}
 
 	if len(opts.ImageConfigScanners) != 0 {
@@ -556,6 +579,10 @@ func initScannerConfig(opts flag.Options, cacheClient cache.Cache) (ScannerConfi
 	if opts.Scanners.Enabled(types.VulnerabilityScanner) {
 		log.Logger.Info("Vulnerability scanning is enabled")
 		log.Logger.Debugf("Vulnerability type:  %s", scanOptions.VulnType)
+	}
+
+	if opts.Scanners.Enabled(types.PacketScanner) {
+		log.Logger.Info("Packet scanning is enabled")
 	}
 
 	// ScannerOption is filled only when config scanning is enabled.

@@ -112,6 +112,41 @@ func (s Scanner) Scan(ctx context.Context, target, artifactKey string, blobKeys 
 		results = append(results, pkgResults...)
 	}
 
+	// Scan packages for vulnerabilities
+	if options.Scanners.Enabled(types.PacketScanner) {
+		packetScanner := ospkg.NewScanner()
+		packetOpts := types.ScanOptions{}
+		detail := ftypes.ArtifactDetail{
+			OS: ftypes.OS{
+				Family: options.OsFamily,
+				Name:   options.OsName,
+			},
+		}
+
+		for _, packet := range options.Packages {
+			detailPackages := make(ftypes.Packages, 0)
+			detailPackages = append(detailPackages, ftypes.Package{
+				Name:       packet.Name,
+				Version:    packet.Version,
+				Release:    packet.Release,
+				Epoch:      int(packet.Epoch),
+				Arch:       packet.Arch,
+				SrcName:    packet.SrcName,
+				SrcVersion: packet.SrcVersion,
+				SrcEpoch:   int(packet.SrcEpoch),
+				SrcRelease: packet.SrcRelease,
+			})
+
+			detail.Packages = detailPackages
+			result, _, err := packetScanner.Scan(packet.Name, detail, packetOpts)
+			if err != nil {
+				log.Logger.Errorf("packetScanner scan err:%s", err)
+				return nil, ftypes.OS{}, xerrors.Errorf("failed to detect packet vulnerabilities: %w", err)
+			}
+			results = append(results, result)
+		}
+	}
+
 	// Scan IaC config files
 	if ShouldScanMisconfigOrRbac(options.Scanners) {
 		configResults := s.MisconfsToResults(artifactDetail.Misconfigurations)
@@ -176,6 +211,32 @@ func (s Scanner) Scan(ctx context.Context, target, artifactKey string, blobKeys 
 }
 
 func (s Scanner) scanVulnerabilities(target string, detail ftypes.ArtifactDetail, options types.ScanOptions) (
+	types.Results, bool, error) {
+	var eosl bool
+	var results types.Results
+
+	if slices.Contains(options.VulnType, types.VulnTypeOS) {
+		vuln, detectedEOSL, err := s.osPkgScanner.Scan(target, detail, options)
+		if err != nil {
+			return nil, false, xerrors.Errorf("unable to scan OS packages: %w", err)
+		} else if vuln.Target != "" {
+			results = append(results, vuln)
+		}
+		eosl = detectedEOSL
+	}
+
+	if slices.Contains(options.VulnType, types.VulnTypeLibrary) {
+		vulns, err := s.langPkgScanner.Scan(detail, options)
+		if err != nil {
+			return nil, false, xerrors.Errorf("failed to scan application libraries: %w", err)
+		}
+		results = append(results, vulns...)
+	}
+
+	return results, eosl, nil
+}
+
+func (s Scanner) scanPakcet(target string, detail ftypes.ArtifactDetail, options types.ScanOptions) (
 	types.Results, bool, error) {
 	var eosl bool
 	var results types.Results
