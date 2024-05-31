@@ -3,6 +3,7 @@ package client
 import (
 	"context"
 	"crypto/tls"
+	"github.com/zhanglimao/trivy/rpc/common"
 	"net/http"
 
 	"golang.org/x/xerrors"
@@ -86,6 +87,11 @@ func (s Scanner) Scan(ctx context.Context, target, artifactKey string, blobKeys 
 				ListAllPackages:   opts.ListAllPackages,
 				LicenseCategories: licenseCategories,
 			},
+			Os: &common.OS{
+				Family: opts.OsFamily,
+				Name:   opts.OsName,
+			},
+			Packages: opts.Packages,
 		})
 		return err
 	})

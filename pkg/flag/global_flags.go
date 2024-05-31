@@ -94,6 +94,8 @@ type GlobalOptions struct {
 	Timeout               time.Duration
 	CacheDir              string
 	GenerateDefaultConfig bool
+	OsName                string
+	OsFamily              string
 }
 
 func NewGlobalFlagGroup() *GlobalFlagGroup {

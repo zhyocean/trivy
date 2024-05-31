@@ -70,6 +70,15 @@ func filesystemRemoteScanner(ctx context.Context, conf ScannerConfig) (scanner.S
 	return s, cleanup, nil
 }
 
+// packetRemoteScanner initializes a filesystem scanner in client/server mode
+func packetRemoteScanner(ctx context.Context, conf ScannerConfig) (scanner.Scanner, func(), error) {
+	s, cleanup, err := initializeRemotePacketScanner(ctx, conf.Target, conf.ArtifactCache, conf.ServerOption, conf.ArtifactOption)
+	if err != nil {
+		return scanner.Scanner{}, func() {}, xerrors.Errorf("unable to initialize a remote filesystem scanner: %w", err)
+	}
+	return s, cleanup, nil
+}
+
 // repositoryStandaloneScanner initializes a repository scanner in standalone mode
 func repositoryStandaloneScanner(ctx context.Context, conf ScannerConfig) (scanner.Scanner, func(), error) {
 	s, cleanup, err := initializeRepositoryScanner(ctx, conf.Target, conf.ArtifactCache, conf.LocalArtifactCache, conf.ArtifactOption)

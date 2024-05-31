@@ -194,6 +194,19 @@ func initializeRemoteFilesystemScanner(ctx context.Context, path string, artifac
 	}, nil
 }
 
+// initializeRemotePacketScanner is for packet scanning in client/server mode
+func initializeRemotePacketScanner(ctx context.Context, path string, artifactCache cache.ArtifactCache, remoteScanOptions client.ScannerOption, artifactOption artifact.Option) (scanner.Scanner, func(), error) {
+	v := _wireValue
+	clientScanner := client.NewScanner(remoteScanOptions, v...)
+	artifactArtifact, err := local2.NewPacketArtifact(path, artifactCache, artifactOption)
+	if err != nil {
+		return scanner.Scanner{}, nil, err
+	}
+	scannerScanner := scanner.NewScanner(clientScanner, artifactArtifact)
+	return scannerScanner, func() {
+	}, nil
+}
+
 // initializeRemoteRepositoryScanner is for repository scanning in client/server mode
 func initializeRemoteRepositoryScanner(ctx context.Context, url string, artifactCache cache.ArtifactCache, remoteScanOptions client.ScannerOption, artifactOption artifact.Option) (scanner.Scanner, func(), error) {
 	v := _wireValue
