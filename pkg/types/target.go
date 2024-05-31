@@ -44,6 +44,9 @@ const (
 
 	// LicenseScanner is the scanner of licenses
 	LicenseScanner = Scanner("license")
+
+	// PacketScanner is the scanner of packet
+	PacketScanner = Scanner("packet")
 )
 
 var (

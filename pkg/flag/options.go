@@ -2,6 +2,7 @@ package flag
 
 import (
 	"fmt"
+	"github.com/zhanglimao/trivy/rpc/common"
 	"io"
 	"os"
 	"strings"
@@ -100,6 +101,7 @@ type Options struct {
 	SBOMOptions
 	ScanOptions
 	SecretOptions
+	PacketOptions
 	VulnerabilityOptions
 
 	// Trivy's version, not populated via CLI flags
@@ -107,6 +109,10 @@ type Options struct {
 
 	// We don't want to allow disabled analyzers to be passed by users, but it is necessary for internal use.
 	DisabledAnalyzers []analyzer.Type
+}
+
+type PacketOptions struct {
+	Packages []*common.Package
 }
 
 // Align takes consistency of options
