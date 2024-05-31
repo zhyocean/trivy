@@ -11,9 +11,9 @@ import (
 
 	dbTypes "github.com/aquasecurity/trivy-db/pkg/types"
 	"github.com/aquasecurity/trivy-db/pkg/vulnsrc/vulnerability"
-	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/report"
-	"github.com/zhanglimao/trivy/pkg/types"
+	ftypes "github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/report"
+	"github.com/zhyocean/trivy/pkg/types"
 )
 
 func TestReportWriter_Sarif(t *testing.T) {
@@ -372,7 +372,7 @@ func TestReportWriter_Sarif(t *testing.T) {
 										DefaultConfiguration: &sarif.ReportingConfiguration{
 											Level: "error",
 										},
-										HelpURI: lo.ToPtr("https://github.com/zhanglimao/trivy/blob/main/pkg/fanal/secret/builtin-rules.go"),
+										HelpURI: lo.ToPtr("https://github.com/zhyocean/trivy/blob/main/pkg/fanal/secret/builtin-rules.go"),
 										Properties: map[string]interface{}{
 											"tags": []interface{}{
 												"secret",

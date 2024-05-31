@@ -8,9 +8,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/artifact"
-	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/types"
+	"github.com/zhyocean/trivy/pkg/fanal/artifact"
+	ftypes "github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/types"
 )
 
 func TestScanner_ScanArtifact(t *testing.T) {

@@ -1,4 +1,5 @@
 //go:build module_integration
+
 package integration
 
 import (
@@ -7,8 +8,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
-	"github.com/zhanglimao/trivy/pkg/scanner/post"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer"
+	"github.com/zhyocean/trivy/pkg/scanner/post"
 )
 
 func TestModule(t *testing.T) {

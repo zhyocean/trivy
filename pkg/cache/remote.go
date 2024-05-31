@@ -7,11 +7,11 @@ import (
 
 	"golang.org/x/xerrors"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/cache"
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/rpc"
-	"github.com/zhanglimao/trivy/pkg/rpc/client"
-	rpcCache "github.com/zhanglimao/trivy/rpc/cache"
+	"github.com/zhyocean/trivy/pkg/fanal/cache"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/rpc"
+	"github.com/zhyocean/trivy/pkg/rpc/client"
+	rpcCache "github.com/zhyocean/trivy/rpc/cache"
 )
 
 // RemoteCache implements remote cache

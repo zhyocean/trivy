@@ -13,7 +13,7 @@ import (
 	"github.com/Azure/azure-sdk-for-go/sdk/azcore/policy"
 	"github.com/Azure/azure-sdk-for-go/sdk/azidentity"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
 )
 
 type Registry struct {

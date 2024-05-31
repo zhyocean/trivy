@@ -1,9 +1,9 @@
 package cloudformation
 
 import (
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer/config"
-	"github.com/zhanglimao/trivy/pkg/misconf"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer/config"
+	"github.com/zhyocean/trivy/pkg/misconf"
 )
 
 const (

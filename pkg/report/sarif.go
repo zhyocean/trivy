@@ -11,8 +11,8 @@ import (
 	"github.com/owenrumney/go-sarif/v2/sarif"
 	"golang.org/x/xerrors"
 
-	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/types"
+	ftypes "github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/types"
 )
 
 const (
@@ -29,7 +29,7 @@ const (
 
 	columnKind = "utf16CodeUnits"
 
-	builtinRulesUrl = "https://github.com/zhanglimao/trivy/blob/main/pkg/fanal/secret/builtin-rules.go" // list all secrets
+	builtinRulesUrl = "https://github.com/zhyocean/trivy/blob/main/pkg/fanal/secret/builtin-rules.go" // list all secrets
 )
 
 var (

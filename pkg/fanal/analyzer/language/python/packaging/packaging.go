@@ -12,9 +12,9 @@ import (
 
 	dio "github.com/aquasecurity/go-dep-parser/pkg/io"
 	"github.com/aquasecurity/go-dep-parser/pkg/python/packaging"
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer/language"
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer/language"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
 )
 
 func init() {

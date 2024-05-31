@@ -7,9 +7,9 @@ import (
 	"github.com/stretchr/testify/assert"
 
 	dbTypes "github.com/aquasecurity/trivy-db/pkg/types"
-	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/report/table"
-	"github.com/zhanglimao/trivy/pkg/types"
+	ftypes "github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/report/table"
+	"github.com/zhyocean/trivy/pkg/types"
 )
 
 func TestMisconfigRenderer(t *testing.T) {

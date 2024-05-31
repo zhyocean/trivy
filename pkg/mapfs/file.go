@@ -11,7 +11,7 @@ import (
 
 	"golang.org/x/xerrors"
 
-	"github.com/zhanglimao/trivy/pkg/syncx"
+	"github.com/zhyocean/trivy/pkg/syncx"
 )
 
 var separator = "/"

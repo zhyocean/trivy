@@ -6,12 +6,12 @@ import (
 	"golang.org/x/xerrors"
 
 	"github.com/aquasecurity/trivy-db/pkg/db"
-	"github.com/zhanglimao/trivy/pkg/commands/operation"
-	"github.com/zhanglimao/trivy/pkg/flag"
-	"github.com/zhanglimao/trivy/pkg/log"
-	"github.com/zhanglimao/trivy/pkg/module"
-	rpcServer "github.com/zhanglimao/trivy/pkg/rpc/server"
-	"github.com/zhanglimao/trivy/pkg/utils/fsutils"
+	"github.com/zhyocean/trivy/pkg/commands/operation"
+	"github.com/zhyocean/trivy/pkg/flag"
+	"github.com/zhyocean/trivy/pkg/log"
+	"github.com/zhyocean/trivy/pkg/module"
+	rpcServer "github.com/zhyocean/trivy/pkg/rpc/server"
+	"github.com/zhyocean/trivy/pkg/utils/fsutils"
 )
 
 // Run runs the scan

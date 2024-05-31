@@ -20,11 +20,11 @@ import (
 	"golang.org/x/xerrors"
 
 	dio "github.com/aquasecurity/go-dep-parser/pkg/io"
-	"github.com/zhanglimao/trivy/pkg/digest"
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/log"
-	"github.com/zhanglimao/trivy/pkg/utils/fsutils"
+	"github.com/zhyocean/trivy/pkg/digest"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/log"
+	"github.com/zhyocean/trivy/pkg/utils/fsutils"
 )
 
 func init() {

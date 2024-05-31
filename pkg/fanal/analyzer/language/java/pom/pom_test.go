@@ -8,9 +8,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer"
 )
 
 func Test_pomAnalyzer_Analyze(t *testing.T) {

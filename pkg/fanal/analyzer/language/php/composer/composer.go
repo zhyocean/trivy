@@ -16,11 +16,11 @@ import (
 	dio "github.com/aquasecurity/go-dep-parser/pkg/io"
 	"github.com/aquasecurity/go-dep-parser/pkg/php/composer"
 	godeptypes "github.com/aquasecurity/go-dep-parser/pkg/types"
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer/language"
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/log"
-	"github.com/zhanglimao/trivy/pkg/utils/fsutils"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer/language"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/log"
+	"github.com/zhyocean/trivy/pkg/utils/fsutils"
 )
 
 func init() {

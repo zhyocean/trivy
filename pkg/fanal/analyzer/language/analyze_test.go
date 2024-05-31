@@ -11,9 +11,9 @@ import (
 
 	dio "github.com/aquasecurity/go-dep-parser/pkg/io"
 	godeptypes "github.com/aquasecurity/go-dep-parser/pkg/types"
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer/language"
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer/language"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
 )
 
 type mockParser struct {

@@ -13,8 +13,8 @@ import (
 	"golang.org/x/xerrors"
 
 	dbTypes "github.com/aquasecurity/trivy-db/pkg/types"
-	"github.com/zhanglimao/trivy/pkg/log"
-	"github.com/zhanglimao/trivy/pkg/types"
+	"github.com/zhyocean/trivy/pkg/log"
+	"github.com/zhyocean/trivy/pkg/types"
 )
 
 // CustomTemplateFuncMap is used to overwrite existing functions for testing.

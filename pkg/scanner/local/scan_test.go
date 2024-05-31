@@ -12,14 +12,14 @@ import (
 
 	"github.com/aquasecurity/trivy-db/pkg/db"
 	dbTypes "github.com/aquasecurity/trivy-db/pkg/types"
-	"github.com/zhanglimao/trivy/pkg/dbtest"
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
-	fos "github.com/zhanglimao/trivy/pkg/fanal/analyzer/os"
-	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/scanner/langpkg"
-	"github.com/zhanglimao/trivy/pkg/scanner/ospkg"
-	"github.com/zhanglimao/trivy/pkg/types"
-	"github.com/zhanglimao/trivy/pkg/vulnerability"
+	"github.com/zhyocean/trivy/pkg/dbtest"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer"
+	fos "github.com/zhyocean/trivy/pkg/fanal/analyzer/os"
+	ftypes "github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/scanner/langpkg"
+	"github.com/zhyocean/trivy/pkg/scanner/ospkg"
+	"github.com/zhyocean/trivy/pkg/types"
+	"github.com/zhyocean/trivy/pkg/vulnerability"
 )
 
 func TestScanner_Scan(t *testing.T) {

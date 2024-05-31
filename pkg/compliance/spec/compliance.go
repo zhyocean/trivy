@@ -11,7 +11,7 @@ import (
 
 	sp "github.com/aquasecurity/defsec/pkg/spec"
 	defsecTypes "github.com/aquasecurity/defsec/pkg/types"
-	"github.com/zhanglimao/trivy/pkg/types"
+	"github.com/zhyocean/trivy/pkg/types"
 )
 
 type Severity string

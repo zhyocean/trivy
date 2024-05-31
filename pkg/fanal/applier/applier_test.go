@@ -7,9 +7,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/applier"
-	"github.com/zhanglimao/trivy/pkg/fanal/cache"
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/fanal/applier"
+	"github.com/zhyocean/trivy/pkg/fanal/cache"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
 )
 
 type dummyData struct {

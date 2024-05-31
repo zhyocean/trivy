@@ -8,8 +8,8 @@ import (
 	"github.com/spdx/tools-golang/tagvalue"
 	"golang.org/x/xerrors"
 
-	"github.com/zhanglimao/trivy/pkg/sbom/spdx"
-	"github.com/zhanglimao/trivy/pkg/types"
+	"github.com/zhyocean/trivy/pkg/sbom/spdx"
+	"github.com/zhyocean/trivy/pkg/types"
 )
 
 type Writer struct {

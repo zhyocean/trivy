@@ -16,12 +16,12 @@ import (
 	"golang.org/x/xerrors"
 
 	dio "github.com/aquasecurity/go-dep-parser/pkg/io"
-	aos "github.com/zhanglimao/trivy/pkg/fanal/analyzer/os"
-	"github.com/zhanglimao/trivy/pkg/fanal/log"
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/mapfs"
-	"github.com/zhanglimao/trivy/pkg/misconf"
-	"github.com/zhanglimao/trivy/pkg/syncx"
+	aos "github.com/zhyocean/trivy/pkg/fanal/analyzer/os"
+	"github.com/zhyocean/trivy/pkg/fanal/log"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/mapfs"
+	"github.com/zhyocean/trivy/pkg/misconf"
+	"github.com/zhyocean/trivy/pkg/syncx"
 )
 
 var (

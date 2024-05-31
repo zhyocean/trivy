@@ -7,9 +7,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
-	aos "github.com/zhanglimao/trivy/pkg/fanal/analyzer/os"
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer"
+	aos "github.com/zhyocean/trivy/pkg/fanal/analyzer/os"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
 )
 
 func TestAlpineReleaseOSAnalyzer_Required(t *testing.T) {

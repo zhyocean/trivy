@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/vm/disk"
+	"github.com/zhyocean/trivy/pkg/fanal/vm/disk"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

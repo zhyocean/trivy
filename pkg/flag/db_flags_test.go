@@ -10,8 +10,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/zhanglimao/trivy/pkg/flag"
-	"github.com/zhanglimao/trivy/pkg/log"
+	"github.com/zhyocean/trivy/pkg/flag"
+	"github.com/zhyocean/trivy/pkg/log"
 )
 
 func TestDBFlagGroup_ToOptions(t *testing.T) {
@@ -48,7 +48,7 @@ func TestDBFlagGroup_ToOptions(t *testing.T) {
 				Light: true,
 			},
 			wantLogs: []string{
-				"'--light' option is deprecated and will be removed. See also: https://github.com/zhanglimao/trivy/discussions/1649",
+				"'--light' option is deprecated and will be removed. See also: https://github.com/zhyocean/trivy/discussions/1649",
 			},
 			assertion: require.NoError,
 		},

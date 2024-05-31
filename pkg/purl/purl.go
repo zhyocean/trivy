@@ -10,10 +10,10 @@ import (
 	packageurl "github.com/package-url/packageurl-go"
 	"golang.org/x/xerrors"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer/os"
-	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/scanner/utils"
-	"github.com/zhanglimao/trivy/pkg/types"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer/os"
+	ftypes "github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/scanner/utils"
+	"github.com/zhyocean/trivy/pkg/types"
 )
 
 const (

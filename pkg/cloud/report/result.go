@@ -6,10 +6,10 @@ import (
 
 	"github.com/aquasecurity/tml"
 
-	renderer "github.com/zhanglimao/trivy/pkg/report/table"
+	renderer "github.com/zhyocean/trivy/pkg/report/table"
 
 	dbTypes "github.com/aquasecurity/trivy-db/pkg/types"
-	"github.com/zhanglimao/trivy/pkg/types"
+	"github.com/zhyocean/trivy/pkg/types"
 )
 
 func writeResultsForARN(report *Report, results types.Results, output io.Writer, service, arn string, severities []dbTypes.Severity) error {

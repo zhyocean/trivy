@@ -11,11 +11,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	_ "github.com/zhanglimao/trivy/pkg/fanal/analyzer/config/all"
-	_ "github.com/zhanglimao/trivy/pkg/fanal/analyzer/secret"
-	"github.com/zhanglimao/trivy/pkg/fanal/artifact"
-	"github.com/zhanglimao/trivy/pkg/fanal/cache"
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
+	_ "github.com/zhyocean/trivy/pkg/fanal/analyzer/config/all"
+	_ "github.com/zhyocean/trivy/pkg/fanal/analyzer/secret"
+	"github.com/zhyocean/trivy/pkg/fanal/artifact"
+	"github.com/zhyocean/trivy/pkg/fanal/cache"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
 )
 
 func setupGitServer() (*httptest.Server, error) {

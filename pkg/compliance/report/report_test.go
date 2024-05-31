@@ -10,10 +10,10 @@ import (
 
 	dbTypes "github.com/aquasecurity/trivy-db/pkg/types"
 	"github.com/aquasecurity/trivy-db/pkg/vulnsrc/vulnerability"
-	"github.com/zhanglimao/trivy/pkg/compliance/report"
-	"github.com/zhanglimao/trivy/pkg/compliance/spec"
-	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/types"
+	"github.com/zhyocean/trivy/pkg/compliance/report"
+	"github.com/zhyocean/trivy/pkg/compliance/spec"
+	ftypes "github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/types"
 )
 
 func TestBuildComplianceReport(t *testing.T) {

@@ -4,14 +4,14 @@ import (
 	"context"
 	"strings"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/artifact"
+	"github.com/zhyocean/trivy/pkg/fanal/artifact"
 
 	"golang.org/x/exp/slices"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/handler"
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/fanal/handler"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
 )
 
 func init() {

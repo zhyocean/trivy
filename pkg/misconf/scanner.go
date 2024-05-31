@@ -25,9 +25,9 @@ import (
 	"github.com/aquasecurity/defsec/pkg/scanners/options"
 	tfscanner "github.com/aquasecurity/defsec/pkg/scanners/terraform"
 	tfpscanner "github.com/aquasecurity/defsec/pkg/scanners/terraformplan"
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/log"
-	"github.com/zhanglimao/trivy/pkg/mapfs"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/log"
+	"github.com/zhyocean/trivy/pkg/mapfs"
 )
 
 var enabledDefsecTypes = map[detection.FileType]string{

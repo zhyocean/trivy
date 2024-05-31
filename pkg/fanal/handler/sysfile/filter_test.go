@@ -4,12 +4,12 @@ import (
 	"context"
 	"testing"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
 )
 
 func Test_systemFileFilterHook_Hook(t *testing.T) {

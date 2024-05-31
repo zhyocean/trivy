@@ -7,10 +7,10 @@ import (
 
 	"golang.org/x/xerrors"
 
-	ospkgDetector "github.com/zhanglimao/trivy/pkg/detector/ospkg"
-	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/log"
-	"github.com/zhanglimao/trivy/pkg/types"
+	ospkgDetector "github.com/zhyocean/trivy/pkg/detector/ospkg"
+	ftypes "github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/log"
+	"github.com/zhyocean/trivy/pkg/types"
 )
 
 type Scanner interface {

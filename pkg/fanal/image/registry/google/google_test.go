@@ -7,7 +7,7 @@ import (
 
 	"github.com/GoogleCloudPlatform/docker-credential-gcr/store"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
 )
 
 func TestCheckOptions(t *testing.T) {

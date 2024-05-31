@@ -23,9 +23,9 @@ import (
 	"github.com/aquasecurity/trivy-db/pkg/db"
 	"github.com/aquasecurity/trivy-db/pkg/metadata"
 
-	"github.com/zhanglimao/trivy/pkg/commands"
-	"github.com/zhanglimao/trivy/pkg/dbtest"
-	"github.com/zhanglimao/trivy/pkg/types"
+	"github.com/zhyocean/trivy/pkg/commands"
+	"github.com/zhyocean/trivy/pkg/dbtest"
+	"github.com/zhyocean/trivy/pkg/types"
 
 	_ "modernc.org/sqlite"
 )

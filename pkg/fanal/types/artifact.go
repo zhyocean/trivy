@@ -6,8 +6,8 @@ import (
 	v1 "github.com/google/go-containerregistry/pkg/v1"
 	"github.com/samber/lo"
 
-	"github.com/zhanglimao/trivy/pkg/digest"
-	aos "github.com/zhanglimao/trivy/pkg/fanal/analyzer/os"
+	"github.com/zhyocean/trivy/pkg/digest"
+	aos "github.com/zhyocean/trivy/pkg/fanal/analyzer/os"
 )
 
 type OS struct {

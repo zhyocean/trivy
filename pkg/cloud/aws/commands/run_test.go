@@ -11,10 +11,10 @@ import (
 	defsecTypes "github.com/aquasecurity/defsec/pkg/types"
 
 	dbTypes "github.com/aquasecurity/trivy-db/pkg/types"
-	"github.com/zhanglimao/trivy/pkg/compliance/spec"
-	"github.com/zhanglimao/trivy/pkg/flag"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/zhyocean/trivy/pkg/compliance/spec"
+	"github.com/zhyocean/trivy/pkg/flag"
 )
 
 func Test_Run(t *testing.T) {

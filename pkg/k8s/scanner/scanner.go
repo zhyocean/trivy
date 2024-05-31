@@ -6,13 +6,13 @@ import (
 	"golang.org/x/xerrors"
 
 	"github.com/aquasecurity/trivy-kubernetes/pkg/artifacts"
-	cmd "github.com/zhanglimao/trivy/pkg/commands/artifact"
-	"github.com/zhanglimao/trivy/pkg/flag"
-	"github.com/zhanglimao/trivy/pkg/k8s/report"
-	"github.com/zhanglimao/trivy/pkg/log"
-	"github.com/zhanglimao/trivy/pkg/parallel"
-	"github.com/zhanglimao/trivy/pkg/scanner/local"
-	"github.com/zhanglimao/trivy/pkg/types"
+	cmd "github.com/zhyocean/trivy/pkg/commands/artifact"
+	"github.com/zhyocean/trivy/pkg/flag"
+	"github.com/zhyocean/trivy/pkg/k8s/report"
+	"github.com/zhyocean/trivy/pkg/log"
+	"github.com/zhyocean/trivy/pkg/parallel"
+	"github.com/zhyocean/trivy/pkg/scanner/local"
+	"github.com/zhyocean/trivy/pkg/types"
 )
 
 type Scanner struct {

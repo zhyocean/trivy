@@ -12,8 +12,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/zhanglimao/trivy/pkg/k8s/report"
-	"github.com/zhanglimao/trivy/pkg/types"
+	"github.com/zhyocean/trivy/pkg/k8s/report"
+	"github.com/zhyocean/trivy/pkg/types"
 )
 
 // Note: the test required k8s (kind) cluster installed.

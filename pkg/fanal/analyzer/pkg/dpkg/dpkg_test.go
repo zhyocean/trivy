@@ -2,15 +2,15 @@ package dpkg
 
 import (
 	"context"
-	"github.com/zhanglimao/trivy/pkg/mapfs"
+	"github.com/zhyocean/trivy/pkg/mapfs"
 	"os"
 	"path/filepath"
 	"sort"
 	"testing"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
 	"github.com/stretchr/testify/assert"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
 )
 
 func Test_dpkgAnalyzer_Analyze(t *testing.T) {

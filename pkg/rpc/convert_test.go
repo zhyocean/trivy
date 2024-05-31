@@ -9,11 +9,11 @@ import (
 
 	dbTypes "github.com/aquasecurity/trivy-db/pkg/types"
 	"github.com/aquasecurity/trivy-db/pkg/vulnsrc/vulnerability"
-	fos "github.com/zhanglimao/trivy/pkg/fanal/analyzer/os"
-	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/types"
-	"github.com/zhanglimao/trivy/rpc/common"
-	"github.com/zhanglimao/trivy/rpc/scanner"
+	fos "github.com/zhyocean/trivy/pkg/fanal/analyzer/os"
+	ftypes "github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/types"
+	"github.com/zhyocean/trivy/rpc/common"
+	"github.com/zhyocean/trivy/rpc/scanner"
 )
 
 func TestConvertToRpcPkgs(t *testing.T) {

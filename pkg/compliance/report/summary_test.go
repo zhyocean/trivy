@@ -6,8 +6,8 @@ import (
 	"github.com/samber/lo"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/zhanglimao/trivy/pkg/compliance/report"
-	"github.com/zhanglimao/trivy/pkg/types"
+	"github.com/zhyocean/trivy/pkg/compliance/report"
+	"github.com/zhyocean/trivy/pkg/types"
 )
 
 func TestBuildSummary(t *testing.T) {

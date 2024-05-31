@@ -6,13 +6,13 @@ import (
 	"os"
 	"strings"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer"
 
 	"golang.org/x/xerrors"
 
-	aos "github.com/zhanglimao/trivy/pkg/fanal/analyzer/os"
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/fanal/utils"
+	aos "github.com/zhyocean/trivy/pkg/fanal/analyzer/os"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/fanal/utils"
 )
 
 const almaAnalyzerVersion = 1

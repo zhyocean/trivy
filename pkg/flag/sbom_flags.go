@@ -3,7 +3,7 @@ package flag
 import (
 	"golang.org/x/xerrors"
 
-	"github.com/zhanglimao/trivy/pkg/log"
+	"github.com/zhyocean/trivy/pkg/log"
 )
 
 var (
@@ -65,7 +65,7 @@ func (f *SBOMFlagGroup) ToOptions() (SBOMOptions, error) {
 
 	if artifactType != "" || sbomFormat != "" {
 		log.Logger.Error("'trivy sbom' is now for scanning SBOM. " +
-			"See https://github.com/zhanglimao/trivy/discussions/2407 for the detail")
+			"See https://github.com/zhyocean/trivy/discussions/2407 for the detail")
 		return SBOMOptions{}, xerrors.New("'--artifact-type' and '--sbom-format' are no longer available")
 	}
 

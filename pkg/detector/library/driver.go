@@ -9,14 +9,14 @@ import (
 	"github.com/aquasecurity/trivy-db/pkg/db"
 	dbTypes "github.com/aquasecurity/trivy-db/pkg/types"
 	"github.com/aquasecurity/trivy-db/pkg/vulnsrc/vulnerability"
-	"github.com/zhanglimao/trivy/pkg/detector/library/compare"
-	"github.com/zhanglimao/trivy/pkg/detector/library/compare/maven"
-	"github.com/zhanglimao/trivy/pkg/detector/library/compare/npm"
-	"github.com/zhanglimao/trivy/pkg/detector/library/compare/pep440"
-	"github.com/zhanglimao/trivy/pkg/detector/library/compare/rubygems"
-	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/log"
-	"github.com/zhanglimao/trivy/pkg/types"
+	"github.com/zhyocean/trivy/pkg/detector/library/compare"
+	"github.com/zhyocean/trivy/pkg/detector/library/compare/maven"
+	"github.com/zhyocean/trivy/pkg/detector/library/compare/npm"
+	"github.com/zhyocean/trivy/pkg/detector/library/compare/pep440"
+	"github.com/zhyocean/trivy/pkg/detector/library/compare/rubygems"
+	ftypes "github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/log"
+	"github.com/zhyocean/trivy/pkg/types"
 )
 
 var ErrSBOMSupportOnly = xerrors.New("SBOM support only")

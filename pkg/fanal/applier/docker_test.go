@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/applier"
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/fanal/applier"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
 )
 
 func TestApplyLayers(t *testing.T) {

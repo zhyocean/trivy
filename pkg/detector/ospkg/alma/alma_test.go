@@ -11,10 +11,10 @@ import (
 	"github.com/aquasecurity/trivy-db/pkg/db"
 	dbTypes "github.com/aquasecurity/trivy-db/pkg/types"
 	"github.com/aquasecurity/trivy-db/pkg/vulnsrc/vulnerability"
-	"github.com/zhanglimao/trivy/pkg/dbtest"
-	"github.com/zhanglimao/trivy/pkg/detector/ospkg/alma"
-	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/types"
+	"github.com/zhyocean/trivy/pkg/dbtest"
+	"github.com/zhyocean/trivy/pkg/detector/ospkg/alma"
+	ftypes "github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/types"
 )
 
 func TestScanner_Detect(t *testing.T) {
@@ -85,7 +85,7 @@ func TestScanner_Detect(t *testing.T) {
 						SrcEpoch:        1,
 						SrcVersion:      "1.14.1",
 						SrcRelease:      "8.module_el8.3.0+2165+af250afe.alma",
-						Modularitylabel: "", // ref: https://bugs.almalinux.org/view.php?id=173 ,  https://github.com/zhanglimao/trivy/issues/2342#issuecomment-1158459628
+						Modularitylabel: "", // ref: https://bugs.almalinux.org/view.php?id=173 ,  https://github.com/zhyocean/trivy/issues/2342#issuecomment-1158459628
 						Licenses:        []string{"BSD"},
 						Layer:           ftypes.Layer{},
 					},

@@ -10,17 +10,17 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/zhanglimao/trivy/internal/testutil"
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
-	"github.com/zhanglimao/trivy/pkg/fanal/artifact"
-	"github.com/zhanglimao/trivy/pkg/fanal/artifact/vm"
-	"github.com/zhanglimao/trivy/pkg/fanal/cache"
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/misconf"
 	ebsfile "github.com/masahiro331/go-ebs-file"
+	"github.com/zhyocean/trivy/internal/testutil"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer"
+	"github.com/zhyocean/trivy/pkg/fanal/artifact"
+	"github.com/zhyocean/trivy/pkg/fanal/artifact/vm"
+	"github.com/zhyocean/trivy/pkg/fanal/cache"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/misconf"
 
-	_ "github.com/zhanglimao/trivy/pkg/fanal/analyzer/os/amazonlinux"
-	_ "github.com/zhanglimao/trivy/pkg/fanal/analyzer/pkg/rpm"
+	_ "github.com/zhyocean/trivy/pkg/fanal/analyzer/os/amazonlinux"
+	_ "github.com/zhyocean/trivy/pkg/fanal/analyzer/pkg/rpm"
 )
 
 const (

@@ -1,7 +1,7 @@
 package types
 
 import (
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
 )
 
 type DetectedLicense struct {
@@ -27,6 +27,6 @@ type DetectedLicense struct {
 	Confidence float64
 
 	// Link is a SPDX link of the license
-	Link string
+	Link  string
 	Layer types.Layer `json:",omitempty"`
 }

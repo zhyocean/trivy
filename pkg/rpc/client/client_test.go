@@ -17,10 +17,10 @@ import (
 	dbTypes "github.com/aquasecurity/trivy-db/pkg/types"
 	"github.com/aquasecurity/trivy-db/pkg/utils"
 	"github.com/aquasecurity/trivy-db/pkg/vulnsrc/vulnerability"
-	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/types"
-	"github.com/zhanglimao/trivy/rpc/common"
-	rpc "github.com/zhanglimao/trivy/rpc/scanner"
+	ftypes "github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/types"
+	"github.com/zhyocean/trivy/rpc/common"
+	rpc "github.com/zhyocean/trivy/rpc/scanner"
 )
 
 func TestScanner_Scan(t *testing.T) {

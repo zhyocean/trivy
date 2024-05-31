@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer/os"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer/os"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
@@ -14,10 +14,10 @@ import (
 	"github.com/aquasecurity/trivy-db/pkg/db"
 	dbTypes "github.com/aquasecurity/trivy-db/pkg/types"
 	"github.com/aquasecurity/trivy-db/pkg/vulnsrc/vulnerability"
-	"github.com/zhanglimao/trivy/pkg/dbtest"
-	"github.com/zhanglimao/trivy/pkg/detector/ospkg/alpine"
-	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/types"
+	"github.com/zhyocean/trivy/pkg/dbtest"
+	"github.com/zhyocean/trivy/pkg/detector/ospkg/alpine"
+	ftypes "github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/types"
 )
 
 func TestScanner_Detect(t *testing.T) {

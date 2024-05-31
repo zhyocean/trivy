@@ -9,8 +9,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/zhanglimao/trivy/internal/testutil"
-	"github.com/zhanglimao/trivy/pkg/types"
+	"github.com/zhyocean/trivy/internal/testutil"
+	"github.com/zhyocean/trivy/pkg/types"
 )
 
 func TestVM(t *testing.T) {

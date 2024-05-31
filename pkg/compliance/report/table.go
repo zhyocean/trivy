@@ -7,8 +7,8 @@ import (
 	"golang.org/x/xerrors"
 
 	dbTypes "github.com/aquasecurity/trivy-db/pkg/types"
-	pkgReport "github.com/zhanglimao/trivy/pkg/report/table"
-	"github.com/zhanglimao/trivy/pkg/types"
+	pkgReport "github.com/zhyocean/trivy/pkg/report/table"
+	"github.com/zhyocean/trivy/pkg/types"
 )
 
 type TableWriter struct {

@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 
 	dbTypes "github.com/aquasecurity/trivy-db/pkg/types"
-	"github.com/zhanglimao/trivy/pkg/detector/library/compare/maven"
+	"github.com/zhyocean/trivy/pkg/detector/library/compare/maven"
 )
 
 func TestComparer_IsVulnerable(t *testing.T) {

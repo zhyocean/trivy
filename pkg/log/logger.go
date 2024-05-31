@@ -10,7 +10,7 @@ import (
 	"golang.org/x/xerrors"
 
 	dlog "github.com/aquasecurity/go-dep-parser/pkg/log"
-	flog "github.com/zhanglimao/trivy/pkg/fanal/log"
+	flog "github.com/zhyocean/trivy/pkg/fanal/log"
 )
 
 var (

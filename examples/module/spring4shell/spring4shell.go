@@ -12,10 +12,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/zhanglimao/trivy/pkg/module/api"
-	"github.com/zhanglimao/trivy/pkg/module/serialize"
-	"github.com/zhanglimao/trivy/pkg/module/wasm"
-	"github.com/zhanglimao/trivy/pkg/types"
+	"github.com/zhyocean/trivy/pkg/module/api"
+	"github.com/zhyocean/trivy/pkg/module/serialize"
+	"github.com/zhyocean/trivy/pkg/module/wasm"
+	"github.com/zhyocean/trivy/pkg/types"
 )
 
 const (

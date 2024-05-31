@@ -7,7 +7,7 @@
 package scanner
 
 import (
-	common "github.com/zhanglimao/trivy/rpc/common"
+	common "github.com/zhyocean/trivy/rpc/common"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -283,7 +283,7 @@ func (x *ScanResponse) GetResults() []*Result {
 	return nil
 }
 
-// Result is the same as github.com/zhanglimao/trivy/pkg/report.Result
+// Result is the same as github.com/zhyocean/trivy/pkg/report.Result
 type Result struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache

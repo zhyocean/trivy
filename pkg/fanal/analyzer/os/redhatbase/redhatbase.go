@@ -8,15 +8,15 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/utils"
+	"github.com/zhyocean/trivy/pkg/fanal/utils"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
 
 	"golang.org/x/xerrors"
 
-	aos "github.com/zhanglimao/trivy/pkg/fanal/analyzer/os"
+	aos "github.com/zhyocean/trivy/pkg/fanal/analyzer/os"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer"
 )
 
 const redhatAnalyzerVersion = 1

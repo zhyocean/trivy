@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/zhanglimao/trivy/pkg/flag"
+	"github.com/zhyocean/trivy/pkg/flag"
 )
 
 func TestCacheFlagGroup_ToOptions(t *testing.T) {

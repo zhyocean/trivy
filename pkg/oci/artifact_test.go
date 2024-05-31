@@ -14,9 +14,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/oci"
-	"github.com/zhanglimao/trivy/pkg/utils/fsutils"
+	ftypes "github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/oci"
+	"github.com/zhyocean/trivy/pkg/utils/fsutils"
 )
 
 type fakeLayer struct {

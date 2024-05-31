@@ -6,14 +6,14 @@ import (
 	"os"
 	"strings"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/utils"
+	"github.com/zhyocean/trivy/pkg/fanal/utils"
 
 	"golang.org/x/xerrors"
 
-	aos "github.com/zhanglimao/trivy/pkg/fanal/analyzer/os"
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
+	aos "github.com/zhyocean/trivy/pkg/fanal/analyzer/os"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
 )
 
 const oracleAnalyzerVersion = 1

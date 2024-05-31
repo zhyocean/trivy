@@ -5,7 +5,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
 
 	"github.com/aws/aws-sdk-go/aws/request"
 

@@ -7,7 +7,7 @@ import (
 	"github.com/masahiro331/go-ext4-filesystem/ext4"
 	"golang.org/x/xerrors"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/vm"
+	"github.com/zhyocean/trivy/pkg/fanal/vm"
 )
 
 type EXT4 struct{}

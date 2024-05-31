@@ -10,9 +10,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
-	"github.com/zhanglimao/trivy/pkg/module"
-	"github.com/zhanglimao/trivy/pkg/scanner/post"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer"
+	"github.com/zhyocean/trivy/pkg/module"
+	"github.com/zhyocean/trivy/pkg/scanner/post"
 )
 
 func TestManager_Register(t *testing.T) {

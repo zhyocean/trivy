@@ -13,13 +13,13 @@ import (
 	"golang.org/x/exp/slices"
 	"golang.org/x/xerrors"
 
-	sbomatt "github.com/zhanglimao/trivy/pkg/attestation/sbom"
-	"github.com/zhanglimao/trivy/pkg/fanal/artifact/sbom"
-	"github.com/zhanglimao/trivy/pkg/fanal/log"
-	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/oci"
-	"github.com/zhanglimao/trivy/pkg/remote"
-	"github.com/zhanglimao/trivy/pkg/types"
+	sbomatt "github.com/zhyocean/trivy/pkg/attestation/sbom"
+	"github.com/zhyocean/trivy/pkg/fanal/artifact/sbom"
+	"github.com/zhyocean/trivy/pkg/fanal/log"
+	ftypes "github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/oci"
+	"github.com/zhyocean/trivy/pkg/remote"
+	"github.com/zhyocean/trivy/pkg/types"
 )
 
 var errNoSBOMFound = xerrors.New("remote SBOM not found")

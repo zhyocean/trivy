@@ -7,10 +7,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/external"
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/fanal/external"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
 
-	_ "github.com/zhanglimao/trivy/pkg/fanal/analyzer/config/all"
+	_ "github.com/zhyocean/trivy/pkg/fanal/analyzer/config/all"
 )
 
 func TestConfigScanner_Scan(t *testing.T) {

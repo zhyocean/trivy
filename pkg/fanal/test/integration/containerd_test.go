@@ -14,7 +14,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer"
 
 	"github.com/containerd/containerd"
 	"github.com/containerd/containerd/images"
@@ -25,12 +25,12 @@ import (
 	testcontainers "github.com/testcontainers/testcontainers-go"
 	"github.com/testcontainers/testcontainers-go/wait"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/applier"
-	"github.com/zhanglimao/trivy/pkg/fanal/artifact"
-	aimage "github.com/zhanglimao/trivy/pkg/fanal/artifact/image"
-	"github.com/zhanglimao/trivy/pkg/fanal/cache"
-	"github.com/zhanglimao/trivy/pkg/fanal/image"
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/fanal/applier"
+	"github.com/zhyocean/trivy/pkg/fanal/artifact"
+	aimage "github.com/zhyocean/trivy/pkg/fanal/artifact/image"
+	"github.com/zhyocean/trivy/pkg/fanal/cache"
+	"github.com/zhyocean/trivy/pkg/fanal/image"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
 )
 
 func configureTestDataPaths(t *testing.T, namespace string) (string, string) {

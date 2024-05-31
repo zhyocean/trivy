@@ -16,12 +16,12 @@ import (
 	"github.com/aquasecurity/go-dep-parser/pkg/nodejs/packagejson"
 	"github.com/aquasecurity/go-dep-parser/pkg/nodejs/yarn"
 	godeptypes "github.com/aquasecurity/go-dep-parser/pkg/types"
-	"github.com/zhanglimao/trivy/pkg/detector/library/compare/npm"
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer/language"
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/log"
-	"github.com/zhanglimao/trivy/pkg/utils/fsutils"
+	"github.com/zhyocean/trivy/pkg/detector/library/compare/npm"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer/language"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/log"
+	"github.com/zhyocean/trivy/pkg/utils/fsutils"
 )
 
 func init() {

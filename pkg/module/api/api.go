@@ -1,6 +1,6 @@
 package api
 
-import "github.com/zhanglimao/trivy/pkg/module/serialize"
+import "github.com/zhyocean/trivy/pkg/module/serialize"
 
 const (
 	Version = 1

@@ -6,11 +6,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/javadb"
-	"github.com/zhanglimao/trivy/pkg/mapfs"
 	"github.com/stretchr/testify/assert"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/javadb"
+	"github.com/zhyocean/trivy/pkg/mapfs"
 
 	_ "modernc.org/sqlite"
 )

@@ -6,7 +6,7 @@ package server
 import (
 	"github.com/google/wire"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/cache"
+	"github.com/zhyocean/trivy/pkg/fanal/cache"
 )
 
 func initializeScanServer(localArtifactCache cache.LocalArtifactCache) *ScanServer {

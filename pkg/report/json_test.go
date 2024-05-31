@@ -9,8 +9,8 @@ import (
 
 	dbTypes "github.com/aquasecurity/trivy-db/pkg/types"
 	"github.com/aquasecurity/trivy-db/pkg/vulnsrc/vulnerability"
-	"github.com/zhanglimao/trivy/pkg/report"
-	"github.com/zhanglimao/trivy/pkg/types"
+	"github.com/zhyocean/trivy/pkg/report"
+	"github.com/zhyocean/trivy/pkg/types"
 )
 
 func TestReportWriter_JSON(t *testing.T) {

@@ -9,7 +9,7 @@ import (
 	"golang.org/x/xerrors"
 
 	dio "github.com/aquasecurity/go-dep-parser/pkg/io"
-	"github.com/zhanglimao/trivy/pkg/log"
+	"github.com/zhyocean/trivy/pkg/log"
 )
 
 type onFile[T any] func(string, fs.FileInfo, dio.ReadSeekerAt) (T, error)

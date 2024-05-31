@@ -3,9 +3,9 @@ package applier
 import (
 	"golang.org/x/xerrors"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
-	"github.com/zhanglimao/trivy/pkg/fanal/cache"
-	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer"
+	"github.com/zhyocean/trivy/pkg/fanal/cache"
+	ftypes "github.com/zhyocean/trivy/pkg/fanal/types"
 )
 
 // Applier defines operation to scan image layers

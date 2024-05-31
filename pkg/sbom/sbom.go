@@ -10,10 +10,10 @@ import (
 	"github.com/in-toto/in-toto-golang/in_toto"
 	"golang.org/x/xerrors"
 
-	"github.com/zhanglimao/trivy/pkg/attestation"
-	"github.com/zhanglimao/trivy/pkg/sbom/cyclonedx"
-	"github.com/zhanglimao/trivy/pkg/sbom/spdx"
-	"github.com/zhanglimao/trivy/pkg/types"
+	"github.com/zhyocean/trivy/pkg/attestation"
+	"github.com/zhyocean/trivy/pkg/sbom/cyclonedx"
+	"github.com/zhyocean/trivy/pkg/sbom/spdx"
+	"github.com/zhyocean/trivy/pkg/types"
 )
 
 type Format string

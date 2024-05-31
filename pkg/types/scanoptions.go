@@ -1,8 +1,8 @@
 package types
 
 import (
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/rpc/common"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/rpc/common"
 )
 
 // ScanOptions holds the attributes for scanning vulnerabilities

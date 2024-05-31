@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zhanglimao/trivy/pkg/sbom/cyclonedx/core"
+	"github.com/zhyocean/trivy/pkg/sbom/cyclonedx/core"
 
-	"github.com/zhanglimao/trivy/pkg/sbom/cyclonedx"
+	"github.com/zhyocean/trivy/pkg/sbom/cyclonedx"
 
 	cdx "github.com/CycloneDX/cyclonedx-go"
 	v1 "github.com/google/go-containerregistry/pkg/v1"
@@ -19,10 +19,10 @@ import (
 
 	dtypes "github.com/aquasecurity/trivy-db/pkg/types"
 	"github.com/aquasecurity/trivy-db/pkg/vulnsrc/vulnerability"
-	fos "github.com/zhanglimao/trivy/pkg/fanal/analyzer/os"
-	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/report"
-	"github.com/zhanglimao/trivy/pkg/types"
+	fos "github.com/zhyocean/trivy/pkg/fanal/analyzer/os"
+	ftypes "github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/report"
+	"github.com/zhyocean/trivy/pkg/types"
 )
 
 func TestMarshaler_Marshal(t *testing.T) {

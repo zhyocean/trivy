@@ -4,7 +4,7 @@ import (
 	"context"
 	"strings"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
 
 	"golang.org/x/xerrors"
 

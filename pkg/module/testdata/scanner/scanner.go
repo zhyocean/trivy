@@ -4,9 +4,9 @@
 package main
 
 import (
-	"github.com/zhanglimao/trivy/pkg/module/api"
-	"github.com/zhanglimao/trivy/pkg/module/serialize"
-	"github.com/zhanglimao/trivy/pkg/module/wasm"
+	"github.com/zhyocean/trivy/pkg/module/api"
+	"github.com/zhyocean/trivy/pkg/module/serialize"
+	"github.com/zhyocean/trivy/pkg/module/wasm"
 )
 
 const (

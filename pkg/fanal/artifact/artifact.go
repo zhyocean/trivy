@@ -4,10 +4,10 @@ import (
 	"context"
 	"sort"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/fanal/walker"
-	"github.com/zhanglimao/trivy/pkg/misconf"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/fanal/walker"
+	"github.com/zhyocean/trivy/pkg/misconf"
 )
 
 type Option struct {

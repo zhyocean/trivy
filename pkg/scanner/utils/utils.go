@@ -3,7 +3,7 @@ package utils
 import (
 	"fmt"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
 )
 
 // FormatVersion formats the package version based on epoch, version & release

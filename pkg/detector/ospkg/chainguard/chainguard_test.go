@@ -4,17 +4,17 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/zhanglimao/trivy/pkg/detector/ospkg/chainguard"
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer/os"
+	"github.com/zhyocean/trivy/pkg/detector/ospkg/chainguard"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer/os"
 
 	"github.com/aquasecurity/trivy-db/pkg/db"
 	dbTypes "github.com/aquasecurity/trivy-db/pkg/types"
 	"github.com/aquasecurity/trivy-db/pkg/vulnsrc/vulnerability"
-	"github.com/zhanglimao/trivy/pkg/dbtest"
-	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/zhyocean/trivy/pkg/dbtest"
+	ftypes "github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/types"
 )
 
 func TestScanner_Detect(t *testing.T) {

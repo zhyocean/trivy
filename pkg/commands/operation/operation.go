@@ -14,14 +14,14 @@ import (
 	"golang.org/x/xerrors"
 
 	"github.com/aquasecurity/trivy-db/pkg/metadata"
-	"github.com/zhanglimao/trivy/pkg/db"
-	"github.com/zhanglimao/trivy/pkg/fanal/cache"
-	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/flag"
-	"github.com/zhanglimao/trivy/pkg/log"
-	"github.com/zhanglimao/trivy/pkg/policy"
-	"github.com/zhanglimao/trivy/pkg/types"
-	"github.com/zhanglimao/trivy/pkg/utils/fsutils"
+	"github.com/zhyocean/trivy/pkg/db"
+	"github.com/zhyocean/trivy/pkg/fanal/cache"
+	ftypes "github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/flag"
+	"github.com/zhyocean/trivy/pkg/log"
+	"github.com/zhyocean/trivy/pkg/policy"
+	"github.com/zhyocean/trivy/pkg/types"
+	"github.com/zhyocean/trivy/pkg/utils/fsutils"
 )
 
 var mu sync.Mutex

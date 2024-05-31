@@ -1,4 +1,4 @@
-module github.com/zhanglimao/trivy
+module github.com/zhyocean/trivy
 
 go 1.19
 

@@ -1,7 +1,7 @@
 package flag
 
 import (
-	"github.com/zhanglimao/trivy/pkg/module"
+	"github.com/zhyocean/trivy/pkg/module"
 )
 
 // e.g. config yaml

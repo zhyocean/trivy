@@ -8,8 +8,8 @@ import (
 	"golang.org/x/xerrors"
 	"k8s.io/utils/strings/slices"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
-	"github.com/zhanglimao/trivy/pkg/misconf"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer"
+	"github.com/zhyocean/trivy/pkg/misconf"
 )
 
 var (

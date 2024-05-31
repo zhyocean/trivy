@@ -12,11 +12,11 @@ import (
 	"github.com/opencontainers/go-digest"
 	"golang.org/x/xerrors"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/cache"
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/fanal/vm"
-	"github.com/zhanglimao/trivy/pkg/fanal/vm/disk"
-	"github.com/zhanglimao/trivy/pkg/log"
+	"github.com/zhyocean/trivy/pkg/fanal/cache"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/fanal/vm"
+	"github.com/zhyocean/trivy/pkg/fanal/vm/disk"
+	"github.com/zhyocean/trivy/pkg/log"
 )
 
 // default vmdk block size 64 KB

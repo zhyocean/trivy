@@ -17,18 +17,18 @@ import (
 	awsScanner "github.com/aquasecurity/defsec/pkg/scanners/cloud/aws"
 	"github.com/aquasecurity/trivy-db/pkg/metadata"
 	javadb "github.com/aquasecurity/trivy-java-db/pkg/db"
-	awscommands "github.com/zhanglimao/trivy/pkg/cloud/aws/commands"
-	"github.com/zhanglimao/trivy/pkg/commands/artifact"
-	"github.com/zhanglimao/trivy/pkg/commands/convert"
-	"github.com/zhanglimao/trivy/pkg/commands/server"
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
-	"github.com/zhanglimao/trivy/pkg/flag"
-	k8scommands "github.com/zhanglimao/trivy/pkg/k8s/commands"
-	"github.com/zhanglimao/trivy/pkg/log"
-	"github.com/zhanglimao/trivy/pkg/module"
-	"github.com/zhanglimao/trivy/pkg/plugin"
-	"github.com/zhanglimao/trivy/pkg/policy"
-	"github.com/zhanglimao/trivy/pkg/types"
+	awscommands "github.com/zhyocean/trivy/pkg/cloud/aws/commands"
+	"github.com/zhyocean/trivy/pkg/commands/artifact"
+	"github.com/zhyocean/trivy/pkg/commands/convert"
+	"github.com/zhyocean/trivy/pkg/commands/server"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer"
+	"github.com/zhyocean/trivy/pkg/flag"
+	k8scommands "github.com/zhyocean/trivy/pkg/k8s/commands"
+	"github.com/zhyocean/trivy/pkg/log"
+	"github.com/zhyocean/trivy/pkg/module"
+	"github.com/zhyocean/trivy/pkg/plugin"
+	"github.com/zhyocean/trivy/pkg/policy"
+	"github.com/zhyocean/trivy/pkg/types"
 )
 
 // VersionInfo holds the trivy DB version Info
@@ -572,7 +572,7 @@ func NewClientCommand(globalFlags *flag.GlobalFlagGroup) *cobra.Command {
 			return validateArgs(cmd, args)
 		},
 		RunE: func(cmd *cobra.Command, args []string) error {
-			log.Logger.Warn("'client' subcommand is deprecated now. See https://github.com/zhanglimao/trivy/discussions/2119")
+			log.Logger.Warn("'client' subcommand is deprecated now. See https://github.com/zhyocean/trivy/discussions/2119")
 
 			if err := clientFlags.Bind(cmd); err != nil {
 				return xerrors.Errorf("flag bind error: %w", err)

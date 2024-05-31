@@ -17,13 +17,13 @@ import (
 	"golang.org/x/exp/slices"
 	"golang.org/x/xerrors"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
-	"github.com/zhanglimao/trivy/pkg/log"
-	tapi "github.com/zhanglimao/trivy/pkg/module/api"
-	"github.com/zhanglimao/trivy/pkg/module/serialize"
-	"github.com/zhanglimao/trivy/pkg/scanner/post"
-	"github.com/zhanglimao/trivy/pkg/types"
-	"github.com/zhanglimao/trivy/pkg/utils/fsutils"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer"
+	"github.com/zhyocean/trivy/pkg/log"
+	tapi "github.com/zhyocean/trivy/pkg/module/api"
+	"github.com/zhyocean/trivy/pkg/module/serialize"
+	"github.com/zhyocean/trivy/pkg/scanner/post"
+	"github.com/zhyocean/trivy/pkg/types"
+	"github.com/zhyocean/trivy/pkg/utils/fsutils"
 )
 
 var (

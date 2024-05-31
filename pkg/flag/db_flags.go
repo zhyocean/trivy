@@ -3,7 +3,7 @@ package flag
 import (
 	"golang.org/x/xerrors"
 
-	"github.com/zhanglimao/trivy/pkg/log"
+	"github.com/zhyocean/trivy/pkg/log"
 )
 
 const defaultDBRepository = "ghcr.io/aquasecurity/trivy-db"
@@ -145,7 +145,7 @@ func (f *DBFlagGroup) ToOptions() (DBOptions, error) {
 		return DBOptions{}, xerrors.New("--skip-java-db-update and --download-java-db-only options can not be specified both")
 	}
 	if light {
-		log.Logger.Warn("'--light' option is deprecated and will be removed. See also: https://github.com/zhanglimao/trivy/discussions/1649")
+		log.Logger.Warn("'--light' option is deprecated and will be removed. See also: https://github.com/zhyocean/trivy/discussions/1649")
 	}
 
 	return DBOptions{

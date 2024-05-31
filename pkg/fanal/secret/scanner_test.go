@@ -12,9 +12,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/zhanglimao/trivy/pkg/fanal/log"
-	"github.com/zhanglimao/trivy/pkg/fanal/secret"
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/fanal/log"
+	"github.com/zhyocean/trivy/pkg/fanal/secret"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
 )
 
 func TestMain(m *testing.M) {

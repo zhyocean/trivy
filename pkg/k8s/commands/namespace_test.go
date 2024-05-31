@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/zhanglimao/trivy/pkg/flag"
+	"github.com/zhyocean/trivy/pkg/flag"
 )
 
 func Test_getNamespace(t *testing.T) {

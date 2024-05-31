@@ -8,11 +8,11 @@ import (
 
 	"github.com/aquasecurity/defsec/pkg/scan"
 	"github.com/aquasecurity/tml"
-	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/flag"
-	pkgReport "github.com/zhanglimao/trivy/pkg/report"
-	"github.com/zhanglimao/trivy/pkg/result"
-	"github.com/zhanglimao/trivy/pkg/types"
+	ftypes "github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/flag"
+	pkgReport "github.com/zhyocean/trivy/pkg/report"
+	"github.com/zhyocean/trivy/pkg/result"
+	"github.com/zhyocean/trivy/pkg/types"
 )
 
 const (

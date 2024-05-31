@@ -3,15 +3,15 @@ package client
 import (
 	"context"
 	"crypto/tls"
-	"github.com/zhanglimao/trivy/rpc/common"
+	"github.com/zhyocean/trivy/rpc/common"
 	"net/http"
 
 	"golang.org/x/xerrors"
 
-	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
-	r "github.com/zhanglimao/trivy/pkg/rpc"
-	"github.com/zhanglimao/trivy/pkg/types"
-	rpc "github.com/zhanglimao/trivy/rpc/scanner"
+	ftypes "github.com/zhyocean/trivy/pkg/fanal/types"
+	r "github.com/zhyocean/trivy/pkg/rpc"
+	"github.com/zhyocean/trivy/pkg/types"
+	rpc "github.com/zhyocean/trivy/rpc/scanner"
 )
 
 type options struct {

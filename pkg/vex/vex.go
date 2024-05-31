@@ -14,11 +14,11 @@ import (
 	"golang.org/x/exp/slices"
 	"golang.org/x/xerrors"
 
-	ftypes "github.com/zhanglimao/trivy/pkg/fanal/types"
-	"github.com/zhanglimao/trivy/pkg/log"
-	"github.com/zhanglimao/trivy/pkg/sbom"
-	"github.com/zhanglimao/trivy/pkg/sbom/cyclonedx"
-	"github.com/zhanglimao/trivy/pkg/types"
+	ftypes "github.com/zhyocean/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/log"
+	"github.com/zhyocean/trivy/pkg/sbom"
+	"github.com/zhyocean/trivy/pkg/sbom/cyclonedx"
+	"github.com/zhyocean/trivy/pkg/types"
 )
 
 // VEX represents Vulnerability Exploitability eXchange. It abstracts multiple VEX formats.

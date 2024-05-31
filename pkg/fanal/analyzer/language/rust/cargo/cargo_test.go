@@ -2,11 +2,11 @@ package cargo
 
 import (
 	"context"
-	"github.com/zhanglimao/trivy/pkg/detector/library/compare"
-	"github.com/zhanglimao/trivy/pkg/fanal/analyzer"
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/zhyocean/trivy/pkg/detector/library/compare"
+	"github.com/zhyocean/trivy/pkg/fanal/analyzer"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
 	"os"
 	"testing"
 )

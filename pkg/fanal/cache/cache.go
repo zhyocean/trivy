@@ -1,7 +1,7 @@
 package cache
 
 import (
-	"github.com/zhanglimao/trivy/pkg/fanal/types"
+	"github.com/zhyocean/trivy/pkg/fanal/types"
 )
 
 const (
