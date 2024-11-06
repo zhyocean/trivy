@@ -134,6 +134,7 @@ func (a Artifact) Inspect(ctx context.Context) (types.ArtifactReference, error) 
 	// Prepare filesystem for post analysis
 	files := new(syncx.Map[analyzer.Type, *mapfs.FS])
 
+	waitChan := make(chan struct{}, 5)
 	err := a.walker.Walk(a.rootPath, func(filePath string, info os.FileInfo, opener analyzer.Opener) error {
 		dir := a.rootPath
 
@@ -143,7 +144,7 @@ func (a Artifact) Inspect(ctx context.Context) (types.ArtifactReference, error) 
 			dir, filePath = filepath.Split(a.rootPath)
 		}
 
-		if err := a.analyzer.AnalyzeFile(ctx, &wg, limit, result, dir, filePath, info, opener, nil, opts); err != nil {
+		if err := a.analyzer.AnalyzeFile(ctx, &wg, limit, result, dir, filePath, info, opener, nil, opts, waitChan); err != nil {
 			return xerrors.Errorf("analyze file (%s): %w", filePath, err)
 		}
 

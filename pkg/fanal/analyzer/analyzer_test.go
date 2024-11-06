@@ -538,7 +538,7 @@ func TestAnalyzerGroup_AnalyzeFile(t *testing.T) {
 					}
 					return os.Open(tt.args.testFilePath)
 				},
-				nil, analyzer.AnalysisOptions{},
+				nil, analyzer.AnalysisOptions{}, nil,
 			)
 
 			wg.Wait()

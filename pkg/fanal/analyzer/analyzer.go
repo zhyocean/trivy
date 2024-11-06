@@ -396,7 +396,7 @@ func (ag AnalyzerGroup) AnalyzerVersions() Versions {
 // and passes only those files to the analyzer for analysis.
 // This function may be called concurrently and must be thread-safe.
 func (ag AnalyzerGroup) AnalyzeFile(ctx context.Context, wg *sync.WaitGroup, limit *semaphore.Weighted, result *AnalysisResult,
-	dir, filePath string, info os.FileInfo, opener Opener, disabled []Type, opts AnalysisOptions) error {
+	dir, filePath string, info os.FileInfo, opener Opener, disabled []Type, opts AnalysisOptions, waitChan chan struct{}) error {
 	if info.IsDir() {
 		return nil
 	}
@@ -430,6 +430,13 @@ func (ag AnalyzerGroup) AnalyzeFile(ctx context.Context, wg *sync.WaitGroup, lim
 			defer limit.Release(1)
 			defer wg.Done()
 			defer rc.Close()
+
+			if waitChan != nil {
+				waitChan <- struct{}{}
+				defer func() {
+					<-waitChan
+				}()
+			}
 
 			ret, err := a.Analyze(ctx, AnalysisInput{
 				Dir:      dir,
