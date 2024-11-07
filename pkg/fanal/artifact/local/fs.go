@@ -138,6 +138,11 @@ func (a Artifact) Inspect(ctx context.Context) (types.ArtifactReference, error) 
 	err := a.walker.Walk(a.rootPath, func(filePath string, info os.FileInfo, opener analyzer.Opener) error {
 		dir := a.rootPath
 
+		//忽略超过200M的文件
+		if info.Size() > 1024*1024*200 {
+			return nil
+		}
+
 		// When the directory is the same as the filePath, a file was given
 		// instead of a directory, rewrite the file path and directory in this case.
 		if filePath == "." {
